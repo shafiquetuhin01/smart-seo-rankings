@@ -4,7 +4,7 @@ import NavbarTop from './components/NavbarTop';
 
 const App = () => {
   return (
-    <div className='bg-white mx-16'>
+    <div>
       <NavbarTop />
       <Navbar>
 
