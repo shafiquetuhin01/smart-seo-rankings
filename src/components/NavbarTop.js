@@ -13,7 +13,7 @@ const NavbarTop = () => {
             Empowering
           </p>
           <p className="sm:text-xl ml-7 italic font-bold text-1xl text-accent">
-            Businesses Online
+            Businesses Online 
           </p>
         </div>
       </div>
