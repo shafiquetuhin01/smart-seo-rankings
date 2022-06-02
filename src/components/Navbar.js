@@ -2,42 +2,19 @@ import React, { useState } from "react";
 const Navbar = () => {
   const Links = [
     {
-      name: "home",
       icon1: <ion-icon name="home-outline"></ion-icon>,
-      icon2: <ion-icon name="search-outline"></ion-icon>,
       link: "/home",
     },
-    { name: "seo service", link: "/" },
-    { name: "paid marketing", link: "/" },
-    { name: "content marketing", link: "/" },
-    { name: "website design & development", link: "/" },
-  ];
-  const Icons = [
-    { homeIcon: <ion-icon name="home-outline"></ion-icon> },
-    { searchIcon: <ion-icon name="search-outline"></ion-icon> },
     {
-      dollarIcon: (
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-          />
-        </svg>
-      ),
+      name: "seo service",
+      icon1: <ion-icon name="search-outline"></ion-icon>,
+      link: "/",
     },
-    { noteIcon: <ion-icon name="document-text-outline"></ion-icon> },
-    { arrowIcon: <ion-icon name="caret-down-outline"></ion-icon> },
-    { pcIcon: <ion-icon name="desktop-outline"></ion-icon> },
+    { name: "paid marketing", icon1:<ion-icon name="logo-usd"></ion-icon>,icon2: <ion-icon name="caret-down-outline"></ion-icon>, link: "/" },
+    { name: "content marketing", icon1:<ion-icon name="document-text-outline"></ion-icon> , icon2: <ion-icon name="caret-down-outline"></ion-icon>, link: "/" },
+    { name: "website design & development",icon1:<ion-icon name="desktop-outline"></ion-icon> , icon2: <ion-icon name="caret-down-outline"></ion-icon>, link: "/" },
   ];
-  const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
   return (
     <div className="w-full fixed">
       <div
@@ -63,7 +40,9 @@ const Navbar = () => {
               className="w-48 h-20 text-right font-semibold text-white text-base py-3 hover:bg-primary capitalize"
             >
               <a href={link.link} className="break-words align-middle">
+                {link.icon1}
                 {link.name}
+                {link.icon2}
               </a>
             </li>
           ))}
