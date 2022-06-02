@@ -22,11 +22,12 @@ const NavbarTop = () => {
           </div>
         </div>
         <div className="grid justify-items-center items-center">
-          <div className="items-center flex">
+          <div className="grid grid-cols-1 sm:grid-cols-2">
+            <div className="items-center flex">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="inline h-12 w-12 text-secondary hover:text-success"
+                className="inline h-10 w-10 text-secondary hover:text-success"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -39,14 +40,15 @@ const NavbarTop = () => {
                 />
               </svg>
             </span>
-            <span className="text-4xl font-bold text-accent hover:text-secondary mx-1 hover">
+            <span className="text-3xl font-bold text-accent hover:text-secondary mx-1 hover">
               855-444-4777
             </span>
-            <div className="sm:inline">
-              <button className="p-2 uppercase btn-primary mx-2 font-bold">
+            </div>
+            <div className="items-center flex">
+              <button className="p-1 text-white uppercase btn-primary mx-2 font-bold">
                 contact us
               </button>
-              <button className="p-2 uppercase btn-secondary font-bold text-white">
+              <button className="p-1 uppercase btn-secondary font-bold text-white">
                 client login
               </button>
             </div>
