@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../assets/images/logo.png";
 
 const NavbarTop = () => {
+  
   return (
     <div className='bg-white' style={{borderTop:'4px solid #0B467A',borderBottom:'4px solid #F47A1E'}}>
       <div className="lg:flex justify-between items-center mx-16"  style={{paddingBottom:'10px',paddingTop:'10px'}}>
