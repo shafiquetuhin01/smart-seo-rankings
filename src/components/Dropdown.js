@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { serviceDropdown } from "./NavItems";
+import { contentDropdown, paidDropdown, webDesignDropdown } from "./NavItems";
 import { Link } from "react-router-dom";
 
 function Dropdown() {
@@ -8,10 +8,10 @@ function Dropdown() {
   return (
     <>
       <ul
-        className={dropdown ? "services-submenu clicked" : "services-submenu"}
+        className={dropdown ? "text-black text-4xl " : "text-3xl text-secondary hidden"}
         onClick={() => setDropdown(!dropdown)}
       >
-        {serviceDropdown.map((item) => {
+        {(contentDropdown,paidDropdown,webDesignDropdown).map((item) => {
           return (
             <li key={item.id}>
               <Link to={item.path} 

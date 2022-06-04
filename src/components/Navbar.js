@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import Dropdown from "./Dropdown";
+import {contentDropdown, navItems, paidDropdown, webDesignDropdown} from "./NavItems";
 const Navbar = () => {
+  const [dropdown, setDropdown] = useState(false);
   const Links = [
     {
       icon1: (
@@ -36,6 +39,7 @@ const Navbar = () => {
   ];
 
   const [open, setOpen] = useState(false);
+  
   return (
     <div className="w-full fixed">
       <div
@@ -56,6 +60,8 @@ const Navbar = () => {
         >
           {Links.map((link) => (
             <li
+                   onMouseEnter={() => setDropdown(true)}
+                  onMouseLeave={() => setDropdown(false)}
               key={link.name}
               style={{ borderRight: "1px solid white", paddingRight: "8px" }}
               className="w-58 h-20 text-right font-semibold text-white text-base py-2 hover:bg-primary capitalize"
@@ -67,6 +73,7 @@ const Navbar = () => {
                 <span className="text-3xl my-3 mx-2">{link.icon1}</span>
                 <span>{link.name}</span>
                 <span className="ml-3 text-3xl">{link.icon2}</span>
+                {dropdown && <Dropdown />}
               </a>
             </li>
           ))}
