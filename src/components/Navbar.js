@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Navbar.css";
 const Navbar = () => {
   const Links = [
     {
@@ -28,14 +27,14 @@ const Navbar = () => {
       icon2: <ion-icon name="caret-down-outline"></ion-icon>,
       link: "/",
     },
-    { 
+    {
       name: "website design & development",
       icon1: <ion-icon name="desktop-outline"></ion-icon>,
       icon2: <ion-icon name="caret-down-outline"></ion-icon>,
       link: "/",
     },
   ];
-  
+
   const [open, setOpen] = useState(false);
   return (
     <div className="w-full fixed">
@@ -58,7 +57,7 @@ const Navbar = () => {
           {Links.map((link) => (
             <li
               key={link.name}
-              style={{ borderRight: "1px solid white",paddingRight: "8px" }}
+              style={{ borderRight: "1px solid white", paddingRight: "8px" }}
               className="w-58 h-20 text-right font-semibold text-white text-base py-2 hover:bg-primary capitalize"
             >
               <a
