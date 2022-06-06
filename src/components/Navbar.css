@@ -22,3 +22,7 @@ ul li ul li:hover{
 .navbar{
     min-height: 2rem !important;
 }
+
+@media (max-width: 991px) {
+    
+}
