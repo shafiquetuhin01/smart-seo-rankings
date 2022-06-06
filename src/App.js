@@ -7,7 +7,7 @@ import ContentMarketing from "./pages/ContentMarketing/ContentMarketing";
 import WebDesignAndDev from "./pages/WebDesignAndDev/WebDesignAndDev";
 import NavbarTop from "./components/NavbarTop";
 import Navbar from "./components/Navbar";
-import InternetMarketing from "./pages/InternetMarketing";
+import InternetMarketing from "./pages/IntenetMarketing/InternetMarketing";
 import GoogleAdsMarketing from "./subPages1/GoogleAdsMarketing";
 import FacebookAdvertising from "./subPages1/FacebookAdvertising";
 import InstagramMarketing from "./subPages1/InstagramMarketing";
@@ -30,6 +30,7 @@ import ResponsiveWebDesign from "./subPages3/ResponsiveWebDesign";
 import LandingPageDesign from "./subPages3/LandingPageDesign";
 import WebsiteMaintenance from "./subPages3/WebsiteMaintenance";
 import WebsiteOptimization from "./subPages3/WebsiteOptimization";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 const App = () => {
   return (
@@ -70,6 +71,7 @@ const App = () => {
         ></Route>
         <Route path="/article-writing" element={<ArticleWriting />}></Route>
         <Route path="/blog-writing" element={<BlogWriting />}></Route>
+        <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/email-marketing" element={<EmailMarketing />}></Route>
         <Route path="/guest-marketing" element={<GuestBlogging />}></Route>
         <Route
