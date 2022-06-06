@@ -31,6 +31,7 @@ import LandingPageDesign from "./subPages3/LandingPageDesign";
 import WebsiteMaintenance from "./subPages3/WebsiteMaintenance";
 import WebsiteOptimization from "./subPages3/WebsiteOptimization";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import Login from "./pages/Login/Login";
 
 const App = () => {
   return (
@@ -45,6 +46,7 @@ const App = () => {
         ></Route>
         <Route path="/paid-marketing" element={<PaidMarketing />}></Route>
         <Route path="/content-marketing" element={<ContentMarketing />}></Route>
+        <Route path="/web-design" element={<WebDesignAndDev/>}></Route>
         <Route
           path="/google-ads-marketing"
           element={<GoogleAdsMarketing />}
@@ -72,6 +74,7 @@ const App = () => {
         <Route path="/article-writing" element={<ArticleWriting />}></Route>
         <Route path="/blog-writing" element={<BlogWriting />}></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
+        <Route path="/login" element={<Login />}></Route>
         <Route path="/email-marketing" element={<EmailMarketing />}></Route>
         <Route path="/guest-marketing" element={<GuestBlogging />}></Route>
         <Route
@@ -80,12 +83,30 @@ const App = () => {
         ></Route>
         <Route path="/b2b-web-design" element={<B2BWebDesign />}></Route>
         <Route path="/b2c-web-design" element={<B2CWebDesign />}></Route>
-        <Route path="/ecommerce-web-design" element={<EcommerceWebDesign />}></Route>
-        <Route path="/wordpress-web-design" element={<WordPressWebDesign />}></Route>
-        <Route path="/responsive-web-design" element={<ResponsiveWebDesign />}></Route>
-        <Route path="/landing-page-design" element={<LandingPageDesign />}></Route>
-        <Route path="/website-maintenance" element={<WebsiteMaintenance />}></Route>
-        <Route path="/website-optimization" element={<WebsiteOptimization />}></Route>
+        <Route
+          path="/ecommerce-web-design"
+          element={<EcommerceWebDesign />}
+        ></Route>
+        <Route
+          path="/wordpress-web-design"
+          element={<WordPressWebDesign />}
+        ></Route>
+        <Route
+          path="/responsive-web-design"
+          element={<ResponsiveWebDesign />}
+        ></Route>
+        <Route
+          path="/landing-page-design"
+          element={<LandingPageDesign />}
+        ></Route>
+        <Route
+          path="/website-maintenance"
+          element={<WebsiteMaintenance />}
+        ></Route>
+        <Route
+          path="/website-optimization"
+          element={<WebsiteOptimization />}
+        ></Route>
       </Routes>
     </>
   );
