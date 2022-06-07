@@ -1,5 +1,5 @@
 import React from "react";
-
+import './App.css'
 import { Route, Routes } from "react-router-dom";
 import SeoServices from "./pages/SeoServices/SeoServices";
 import PaidMarketing from "./pages/PaidMarketing/PaidMarketing";
@@ -32,6 +32,7 @@ import WebsiteMaintenance from "./subPages3/WebsiteMaintenance";
 import WebsiteOptimization from "./subPages3/WebsiteOptimization";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Login from "./pages/Login/Login";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/seo-services" element={<SeoServices />}></Route>
+        <Route path="/" element={<SeoServices />}></Route>
         <Route
           path="/internet-marketing"
           element={<InternetMarketing />}
@@ -106,6 +108,10 @@ const App = () => {
         <Route
           path="/website-optimization"
           element={<WebsiteOptimization />}
+        ></Route>
+        <Route
+          path="*"
+          element={<NotFound />}
         ></Route>
       </Routes>
     </>

@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import * as Icons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const handleClick = () => setOpen(!open);
   const menuItems = (
     <>
       <li>
@@ -193,7 +195,12 @@ const Navbar = () => {
   );
   return (
     <div
-      style={{ backgroundColor: "#091D3F", color: "white",margin:"0",padding:"0" }}
+      style={{
+        backgroundColor: "#091D3F",
+        color: "white",
+        margin: "0",
+        padding: "0",
+      }}
       className="navbar"
     >
       <div className="navbar-start">
@@ -212,11 +219,15 @@ const Navbar = () => {
             <Icons.FaHome className="flex items-center justify-center text-4xl text-white " />
           </Link>
         </li>
-        <ul className="menu menu-horizontal">{menuItems}</ul>
+        <ul className={open ? "nav-menu menu menu-horizontal active" : "nav-menu"}>{menuItems}</ul>
       </div>
       <div className="navbar-end">
-        <label tabIndex="0" className="btn btn-ghost lg:hidden">
-          <svg
+        <label
+          onClick={handleClick}
+          tabIndex="0"
+          className="nav-icon btn btn-ghost lg:hidden"
+        >
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
             fill="none"
@@ -229,7 +240,8 @@ const Navbar = () => {
               strokeLinejoin="round"
               d="M4 6h16M4 12h16M4 18h16"
             />
-          </svg>
+          </svg> */}
+          <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
         </label>
       </div>
     </div>
