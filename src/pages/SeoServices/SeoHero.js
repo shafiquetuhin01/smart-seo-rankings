@@ -4,11 +4,17 @@ import RequestForm from "./RequestForm";
 import "./SeoHero.css";
 import hero2 from "../../assets/images/searchberg-images/cal.webp";
 import hero3 from "../../assets/images/searchberg-images/arrow.webp";
+<<<<<<< HEAD
 import hero4 from "../../assets/images/searchberg-images/moneyback.webp";
 import { Link } from "react-router-dom";
 const SeoHero = () => {
   return (
     <div class="flex justify-center items-center mx-28 mt-5">
+=======
+const SeoHero = () => {
+  return (
+    <div class="flex justify-center items-center mx-32 mt-5">
+>>>>>>> 0ac02b72c37496099046f5db7c5e02ad291f8135
       <div
         className="img-padding bg-no-repeat w-9/12 "
         style={{ backgroundImage: `url(${hero1})` }}
@@ -44,6 +50,7 @@ const SeoHero = () => {
                 <p className="text-5xl font-bold">$199<sup>*</sup></p>
             </div>
         </div>
+<<<<<<< HEAD
         <div className="flex justify-center items-center">
           <div className="w-3/12">
             <img src={hero4} alt="" />
@@ -60,6 +67,10 @@ const SeoHero = () => {
         </div>
       </div>
       <div className="w-3/12 mx-auto">
+=======
+      </div>
+      <div className="w-3/12">
+>>>>>>> 0ac02b72c37496099046f5db7c5e02ad291f8135
         <RequestForm />
       </div>
     </div>
