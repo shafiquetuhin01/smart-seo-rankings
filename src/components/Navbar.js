@@ -8,7 +8,7 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link to="/seo-services">
+        <Link to="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
