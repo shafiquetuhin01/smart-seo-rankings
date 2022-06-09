@@ -215,11 +215,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <li className="list-none">
-          <Link to="/internet-marketing" className="btn btn-ghost normal-case ">
-            <Icons.FaHome className="flex items-center justify-center text-4xl text-white " />
+          <Link to="/internet-marketing">
+            <Icons.FaHome className="flex items-center justify-center text-4xl text-white mr-2 " />
           </Link>
         </li>
-        <ul className={open ? "nav-menu menu menu-horizontal active" : "nav-menu"}>{menuItems}</ul>
+        <ul className="menu menu-horizontal">
+          {menuItems}
+        </ul>
       </div>
       <div className="navbar-end">
         <label
@@ -227,21 +229,7 @@ const Navbar = () => {
           tabIndex="0"
           className="nav-icon btn btn-ghost lg:hidden"
         >
-          {/* <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            strokeWidth={2}
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg> */}
-          <i className={open ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className={open ? "fas fa-times bg-accent p-2" : "fas fa-bars bg-accent p-2"}></i>
         </label>
       </div>
     </div>
