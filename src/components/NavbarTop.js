@@ -19,7 +19,7 @@ const NavbarTop = () => {
       }}
     >
       <div
-        className="lg:flex justify-between items-center mx-16"
+        className="lg:flex justify-between items-center mx-20"
         style={{ paddingBottom: "10px", paddingTop: "10px" }}
       >
         <div className="flex justify-items-center items-center">

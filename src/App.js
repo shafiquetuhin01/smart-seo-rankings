@@ -33,6 +33,7 @@ import WebsiteOptimization from "./subPages3/WebsiteOptimization";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
+import Request from "./pages/Request/Request";
 
 const App = () => {
   return (
@@ -60,6 +61,7 @@ const App = () => {
         ></Route>
         <Route path="/youtube-ads" element={<YoutubeAdvertising />}></Route>
         <Route path="/twitter-marketing" element={<TwitterMarketing />}></Route>
+        <Route path="/request" element={<Request />}></Route>
         <Route
           path="/linkedin-marketing"
           element={<LinkedinMarketing />}
