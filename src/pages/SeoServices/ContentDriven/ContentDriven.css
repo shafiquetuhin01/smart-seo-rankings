@@ -1,3 +1,7 @@
 .content-border{
     border-top: 1px dotted white;
 }
+.blog-p-text{
+    font-size: 16px;
+    margin-left: 120px;
+}
