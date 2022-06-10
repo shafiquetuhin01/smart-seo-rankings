@@ -201,7 +201,7 @@ const Navbar = () => {
         margin: "0",
         padding: "0",
       }}
-      className="navbar overflow-x-clip"
+      className="navbar"
     >
       <div className="navbar-start">
         <div className="dropdown">

@@ -4,7 +4,7 @@ import logo from "../assets/images/logo.png";
 
 const NavbarTop = () => {
   const navigate = useNavigate();
-  const handleContuct = () => {
+  const handleContact = () => {
     navigate("/contact-us");
   };
   const handleLogin = () => {
@@ -19,7 +19,7 @@ const NavbarTop = () => {
       }}
     >
       <div
-        className="lg:flex justify-between items-center mx-20"
+        className="lg:flex justify-between items-center mx-16"
         style={{ paddingBottom: "10px", paddingTop: "10px" }}
       >
         <div className="flex justify-items-center items-center">
@@ -63,7 +63,7 @@ const NavbarTop = () => {
             </div>
             <div className="items-center flex">
               <button
-                onClick={handleContuct}
+                onClick={handleContact}
                 className="p-1 text-white uppercase btn-primary mx-2 font-bold"
               >
                 contact us
