@@ -16,7 +16,7 @@ const ContentDriven = () => {
             <span className="text-secondary">Content Marketing Mix:</span>
           </h2>
         </div>
-        <div className="grid grid-cols-3 gap-10 mt-8">
+        <div className="grid justify-center lg:grid-cols-3 gap-10 mt-8">
           <div className="justify-center items-center">
             <div className="flex items-center">
               <p className="w-10 content-border mr-3"></p>
