@@ -1,4 +1,5 @@
 import React from "react";
+import TestimonialCarousel from "./TestimonialCarousel";
 
 const ClientTestimonial = () => {
   return (
@@ -13,6 +14,7 @@ const ClientTestimonial = () => {
           to say about our work.
         </p>
       </div>
+      <TestimonialCarousel />
     </div>
   );
 };
