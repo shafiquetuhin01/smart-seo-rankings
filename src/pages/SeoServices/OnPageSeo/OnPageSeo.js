@@ -1,6 +1,7 @@
 import React from "react";
 import OnPageContent from "./OnPageContent";
 import "./OnPageSeo.css";
+import SeoCallUs from "./SeoCallUs";
 const OnPageSeo = () => {
   return (
     <div className="mx-16">
@@ -10,6 +11,7 @@ const OnPageSeo = () => {
           <p className="on-page-text">Below are some of the many vital tasks that are at the core of our SEO Strategy.</p>
       </div>
       <OnPageContent />
+      <SeoCallUs />
     </div>
   );
 };
