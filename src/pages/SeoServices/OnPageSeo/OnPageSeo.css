@@ -4,6 +4,12 @@
     max-width: 65%;
     margin: 25px auto;
 }
-.on-page-content{
+.p-one-page p{
     font-size: 18px;
+}
+.one-page-image{
+    object-fit: cover;
+  max-width: 65px;
+  max-height: 65px;
+  
 }
