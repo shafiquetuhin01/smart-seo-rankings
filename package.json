@@ -22,6 +22,7 @@
     "react-query": "^3.39.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
     "react-toastify": "^9.0.1",
     "ssr-window": "^4.0.2",
     "stripe": "^9.5.0",

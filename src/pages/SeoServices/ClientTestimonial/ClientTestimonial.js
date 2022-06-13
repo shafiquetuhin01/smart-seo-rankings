@@ -1,4 +1,5 @@
 import React from "react";
+import ReviewWidget from "./ReviewWidget";
 import TestimonialCarousel from "./TestimonialCarousel";
 
 const ClientTestimonial = () => {
@@ -15,6 +16,7 @@ const ClientTestimonial = () => {
         </p>
       </div>
       <TestimonialCarousel />
+      <ReviewWidget />
     </div>
   );
 };
