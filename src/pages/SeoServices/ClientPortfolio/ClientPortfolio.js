@@ -24,8 +24,8 @@ const ClientPortfolio = () => {
               <div className="lg:flex mt-7 justify-evenly portfolio-icon items-center gap-5">
                 <div>
                   <div className="portfolio-img-sizing">
-                    <a>
-                      <img
+                    <a href="#">
+                      <img className="img-hover1"
                         src="https://i.ibb.co/279SCSz/automotive-sp.webp"
                         alt=""
                       />
@@ -39,7 +39,7 @@ const ClientPortfolio = () => {
                 <div>
                   <div className="portfolio-img-sizing">
                   <a href="#">
-                      <img
+                      <img className=" img-hover2"
                         src="https://i.ibb.co/qjZGz4t/bussiness-sp.webp"
                         alt=""
                       />
@@ -151,11 +151,7 @@ const ClientPortfolio = () => {
           </div>
 
           <div>
-            <img
-              className="portfolio-img"
-              src="https://i.ibb.co/vH4XT3L/automotive.webp"
-              alt=""
-            />
+            <div className="portfolio-img"></div>
           </div>
         </div>
       </div>
