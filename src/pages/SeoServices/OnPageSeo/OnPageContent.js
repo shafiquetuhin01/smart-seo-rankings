@@ -2,7 +2,7 @@ import React from "react";
 import "./OnPageSeo.css";
 const OnPageContent = () => {
   return (
-    <div className="grid lg:grid-cols-3 gap-10 pb-10">
+    <div className="w-10/12 mx-auto grid lg:grid-cols-3 gap-10 pb-10">
       <div className="flex justify-center">
         <div >
           <img

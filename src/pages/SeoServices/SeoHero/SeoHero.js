@@ -4,7 +4,7 @@ import "./SeoHero.css";
 import { Link } from "react-router-dom";
 const SeoHero = () => {
   return (
-    <div class="flex justify-center items-center mx-28 mt-5">
+    <div className="flex justify-center items-center mx-28 mt-5">
       <div
         className="img-padding bg-no-repeat w-9/12 "
         style={{ backgroundImage: `url("https://i.ibb.co/bJWHq8v/girl.webp")` }}
@@ -18,8 +18,8 @@ const SeoHero = () => {
         </h2>
         <div className="flex items-center">
           <div className=" w-1/4">
-              <p className="hr-color"><hr /></p>
-              <p className="hr-color-2nd mt-2"><hr /></p>
+              <p className="hr-color"></p>
+              <p className="hr-color-2nd mt-2"></p>
           </div>
           <div className="mx-2">
               <div className="flex items-center">
@@ -28,8 +28,8 @@ const SeoHero = () => {
               </div>
           </div>
           <div className=" w-1/4">
-              <p className="hr-color"><hr /></p>
-              <p className="hr-color-2nd mt-2"><hr /></p></div>
+              <p className="hr-color"></p>
+              <p className="hr-color-2nd mt-2"></p></div>
         </div>
         <div className="flex mt-3 mr-5 items-center justify-center">
             <p className="italic text-4xl font-bold">Starting from</p>

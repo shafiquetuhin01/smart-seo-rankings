@@ -4,7 +4,7 @@ import "./ContentDriven.css";
 const ContentDriven = () => {
   return (
     <div className="bg-accent py-10 text-white">
-      <div className="mx-16">
+      <div className="w-9/12 mx-auto">
         <div>
           <h2 className="text-4xl text-center ">
             <span className="text-secondary">Content-Driven SEO </span>Services
@@ -16,7 +16,7 @@ const ContentDriven = () => {
             <span className="text-secondary">Content Marketing Mix:</span>
           </h2>
         </div>
-        <div className="grid justify-center lg:grid-cols-3 gap-10 mt-8">
+        <div className="grid justify-center lg:grid-cols-3 gap-10 mt-8 content-link">
           <div className="justify-center items-center">
             <div className="flex items-center">
               <p className="w-10 content-border mr-3"></p>

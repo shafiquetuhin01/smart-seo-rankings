@@ -1,5 +1,6 @@
 import React from "react";
 import Awards from "./Awards/Awards";
+import ClientPortfolio from "./ClientPortfolio/ClientPortfolio";
 import ClientTestimonial from "./ClientTestimonial/ClientTestimonial";
 import ContentDriven from "./ContentDriven/ContentDriven";
 import OnPageSeo from "./OnPageSeo/OnPageSeo";
@@ -17,6 +18,7 @@ const SeoServices = () => {
       <OnPageSeo />
       <ClientTestimonial />
       <ReviewStudies />
+      <ClientPortfolio />
     </>
   );
 };
