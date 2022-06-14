@@ -20,7 +20,12 @@ body {
     background-color: #fff;
     display: block;
 }
-
+a{
+  color: #1D75CC;
+}
+p{
+  text-align: justify;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

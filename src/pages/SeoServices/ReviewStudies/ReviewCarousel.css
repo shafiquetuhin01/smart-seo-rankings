@@ -1,0 +1,24 @@
+.review-carousel{
+    width: 60%;
+    margin: 0 auto;
+
+}
+table{
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+table,th,td{
+    border: 1px solid black;
+    font-size: 16px;
+    text-align: left;
+    padding: 5px;
+}
+th{
+    text-align: center;
+    background-color: #1D75CC;
+    color: white;
+}
+tr td:nth-of-type(2) {
+    text-align:center;
+}
