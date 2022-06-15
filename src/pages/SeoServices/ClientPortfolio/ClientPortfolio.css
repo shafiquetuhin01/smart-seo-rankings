@@ -1,10 +1,10 @@
-.portfolio-img{
+/* .portfolio-img{
     width: 457px;
     height: 445px;
     object-fit: cover;
     background-image: url('https://i.ibb.co/vH4XT3L/automotive.webp');
     background-size: cover;
-}
+} */
 .portfolio-icon .portfolio-img-sizing{
     background-color: #1D75CC;
     border: 3px solid #375280;
@@ -16,10 +16,4 @@
     border: none;
     border: 3px solid #F37F34;
 }
-.img-hover1:hover ~ .portfolio-img{
-    background-image: url("https://i.ibb.co/vH4XT3L/automotive.webp");
-}
-.img-hover2:hover ~ .portfolio-img{
-    background-image: url("https://i.ibb.co/x6mpVJ1/business.webp")
 
-}
