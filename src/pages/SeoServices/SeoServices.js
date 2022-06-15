@@ -6,6 +6,7 @@ import ContentDriven from "./ContentDriven/ContentDriven";
 import OnPageSeo from "./OnPageSeo/OnPageSeo";
 import ReviewStudies from "./ReviewStudies/ReviewStudies";
 import SeoHero from "./SeoHero/SeoHero";
+import SeoProcess from "./SeoProcess/SeoProcess";
 
 
 
@@ -19,6 +20,7 @@ const SeoServices = () => {
       <ClientTestimonial />
       <ReviewStudies />
       <ClientPortfolio />
+      <SeoProcess />
     </>
   );
 };

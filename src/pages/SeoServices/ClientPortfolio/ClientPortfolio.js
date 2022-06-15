@@ -31,7 +31,7 @@ const ClientPortfolio = () => {
             <div>
               <div className="lg:flex mt-7 justify-evenly portfolio-icon items-center gap-5">
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                         onMouseEnter={() =>
@@ -56,7 +56,7 @@ const ClientPortfolio = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                         onMouseEnter={() =>
@@ -74,7 +74,7 @@ const ClientPortfolio = () => {
                   <p className="text-center mt-2 text-lg font-bold">Business</p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -93,7 +93,7 @@ const ClientPortfolio = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -112,7 +112,7 @@ const ClientPortfolio = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -131,7 +131,7 @@ const ClientPortfolio = () => {
               </div>
               <div className="lg:flex justify-evenly portfolio-icon items-center gap-5 mt-12">
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -149,7 +149,7 @@ const ClientPortfolio = () => {
                   <p className="text-center mt-2 text-lg font-bold">Health</p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -168,7 +168,7 @@ const ClientPortfolio = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -185,7 +185,7 @@ const ClientPortfolio = () => {
                   <p className="text-center mt-2 text-lg font-bold">Shopping</p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>
@@ -204,7 +204,7 @@ const ClientPortfolio = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="portfolio-img-sizing">
+                  <div className="portfolio-img-sizing lg:flex items-center justify-center">
                     <NavLink to="#">
                       <img
                       onMouseEnter={() =>

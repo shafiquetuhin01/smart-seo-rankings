@@ -8,12 +8,19 @@
 .portfolio-icon .portfolio-img-sizing{
     background-color: #1D75CC;
     border: 3px solid #375280;
-    border-radius: 50%;
-    padding: 20px;
+    
+    width: 97px;
+    height: 97px;
+    border-radius: 100%;
 }
 .portfolio-icon .portfolio-img-sizing:hover{
     background-color: #F37F34;
     border: none;
     border: 3px solid #F37F34;
 }
+/* .portfolio-icon .portfolio-img-sizing img{
+    max-width: 58px;
+    max-height: 48px;
+    object-fit: cover;
+} */
 
