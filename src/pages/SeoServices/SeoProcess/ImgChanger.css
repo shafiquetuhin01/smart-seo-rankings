@@ -15,3 +15,22 @@
     background-color: #ddd;
     margin-right: 10px;
 }
+.li-items-span{
+    position: relative;
+}
+.li-items-span span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #123575;
+}
+.li-items-span{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #1D75CC 100%);
+}
