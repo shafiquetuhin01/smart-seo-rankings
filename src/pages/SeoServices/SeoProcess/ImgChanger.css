@@ -15,10 +15,10 @@
     background-color: #ddd;
     margin-right: 10px;
 }
-.li-items-span{
+.li-items-span1{
     position: relative;
 }
-.li-items-span span{
+.li-items-span1 span{
     position: absolute;
     left: 0;
     width: 50px;
@@ -31,6 +31,158 @@
     font-size: 28px;
     border: 3px solid #123575;
 }
-.li-items-span{
+.li-items-span1{
     background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #1D75CC 100%);
+}
+.li-items-span2{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #198B9A 100%);
+}
+.li-items-span2{
+    position: relative;
+}
+.li-items-span2 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #123575;
+}
+.li-items-span3{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #F2701D 100%);
+}
+.li-items-span3{
+    position: relative;
+}
+.li-items-span3 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #123575;
+}
+.li-items-span4{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #54B916 100%);
+}
+.li-items-span4{
+    position: relative;
+}
+.li-items-span4 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #123575;
+}
+.li-items-span5{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #E81445 100%);
+}
+.li-items-span5{
+    position: relative;
+}
+.li-items-span5 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #123575;
+}
+.li-items-span6{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #123575 100%);
+}
+.li-items-span6{
+    position: relative;
+}
+.li-items-span6 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #050b16;
+}
+.li-items-span7{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #EC0C2B 100%);
+}
+.li-items-span7{
+    position: relative;
+}
+.li-items-span7 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #143a81;
+}
+.li-items-span8{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #199A8E 100%);
+}
+.li-items-span8{
+    position: relative;
+}
+.li-items-span8 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #143a81;
+}
+.li-items-span9{
+    background: linear-gradient(298deg, transparent 0, transparent 50px,  0, #000000 100%);
+}
+.li-items-span9{
+    position: relative;
+}
+.li-items-span9 span{
+    position: absolute;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: -25px;
+    color: #fff;
+    font-size: 28px;
+    border: 3px solid #143a81;
 }
