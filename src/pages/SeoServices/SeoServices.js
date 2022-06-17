@@ -3,6 +3,7 @@ import Awards from "./Awards/Awards";
 import ClientPortfolio from "./ClientPortfolio/ClientPortfolio";
 import ClientTestimonial from "./ClientTestimonial/ClientTestimonial";
 import ContentDriven from "./ContentDriven/ContentDriven";
+import FeaturedBlog from "./FeaturedBlog/FeaturedBlog";
 import OnPageSeo from "./OnPageSeo/OnPageSeo";
 import ReviewStudies from "./ReviewStudies/ReviewStudies";
 import SeoHero from "./SeoHero/SeoHero";
@@ -21,6 +22,7 @@ const SeoServices = () => {
       <ReviewStudies />
       <ClientPortfolio />
       <SeoProcess />
+      <FeaturedBlog />
     </>
   );
 };
