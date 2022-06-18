@@ -1,5 +1,6 @@
 import React from "react";
 import Awards from "./Awards/Awards";
+import CheckOut from "./CheckOut/CheckOut";
 import ClientPortfolio from "./ClientPortfolio/ClientPortfolio";
 import ClientTestimonial from "./ClientTestimonial/ClientTestimonial";
 import ContentDriven from "./ContentDriven/ContentDriven";
@@ -23,6 +24,7 @@ const SeoServices = () => {
       <ClientPortfolio />
       <SeoProcess />
       <FeaturedBlog />
+      <CheckOut />
     </>
   );
 };

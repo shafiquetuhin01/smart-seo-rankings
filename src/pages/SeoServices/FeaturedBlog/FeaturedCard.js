@@ -2,7 +2,7 @@ import React from "react";
 
 const FeaturedCard = () => {
   return (
-    <div className="flex items-center justify-center gap-5 pb-10 ">
+    <div className="lg:flex items-center justify-center gap-5 pb-10 mx-auto ">
       <div class="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
