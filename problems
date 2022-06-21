@@ -88,3 +88,33 @@
           </h4>
         </li>
       </ul>
+
+      
+    
+  <!-- 20/6/22 -->
+  <div className="w-6/12">
+    <div
+      style={{
+        width: "319px",
+        height: "377px",
+        backgroundImage: 'url("https://i.ibb.co/dfnHYqY/bg-sample.png")',
+      }} className="w-6/12"
+    >
+      <h3>
+        <img
+          className="mx-auto mt-5 pt-5"
+          src="https://i.ibb.co/vkBvGcL/web-dd.webp"
+          alt=""
+        />
+      </h3>
+      <h3 className="text-white text-lg font-bold mt-12 text-center">
+        Website Design & Development
+      </h3>
+      <h3 className="text-center">
+        <button className="btn btn-warning mt-24">view samples</button>
+      </h3>
+    </div>
+    <div className="w-6/12">
+      
+    </div>
+    </div>
