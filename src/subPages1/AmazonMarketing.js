@@ -21,6 +21,11 @@ const AmazonMarketing = () => {
         <div className={`w-96 h-96 ${color}`}></div>
         
       </div>
+      <div className="w-96 h-96 bg-slate-500 my-5 mx-auto text-3xl font-bold text-center text-white flex flex-col items-center justify-start" style={{}}>
+        <h3>Item No - 1</h3>
+        <h3>Item No - 1</h3>
+        
+      </div>
       
     </div>
   );
