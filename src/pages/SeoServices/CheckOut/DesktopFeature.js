@@ -1,9 +1,15 @@
+import "./DesktopFeature.css";
 import React from "react";
-import './DesktopFeature.css';
+
 const DesktopFeature = () => {
-   
+  const current = new Date();
+  const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  const d = new Date();
+  let name = month[d.getMonth()];
+  const date = `${current.getDate()} ${name} ${current.getFullYear()}`;
+
   return (
-    <div className="min-h-screen lg:flex w-11/12 mx-auto py-20">
+    <div className="min-h-screen lg:flex w-11/12 mx-auto pt-20">
       <div className="left w-full">
         <div className="flex items-center justify-center">
           <img src="https://i.ibb.co/y6B7Pqt/badge.webp" alt="badge" />
@@ -19,7 +25,12 @@ const DesktopFeature = () => {
           <img src="https://i.ibb.co/khB0Yk9/badge-arrow.webp" alt="arrow" />
         </div>
         <div>
-          <p className="text-white font-bold text-lg mx-10 mt-3">The keyword rankings highlighted here are a testament to Search Berg’s expertise in Organic SEO. These rankings speak volumes about our expert SEO services and the vast body of expertise we bring to the table.</p>
+          <p className="text-white font-bold text-lg mx-10 mt-3">
+            The keyword rankings highlighted here are a testament to Search
+            Berg’s expertise in Organic SEO. These rankings speak volumes about
+            our expert SEO services and the vast body of expertise we bring to
+            the table.
+          </p>
         </div>
       </div>
       <div
@@ -38,11 +49,23 @@ const DesktopFeature = () => {
           <h3 className=" inline">Keywords</h3>
           <h3 className="float-right mr-12">Rankings</h3>
         </div>
-        <div className="relative overflow-y-scroll overflow-item h-64 mr-6 overflow-auto" style={{width:'97%'}} >
-          <img className=" mx-auto" style={{width:540,height:560,maxWidth:"100%"}} src="https://i.ibb.co/kSrt5s1/home-keywords.webp" alt="" />
+        <div
+          className="relative ml-2 overflow-y-scroll overflow-item h-64 mr-5 overflow-auto"
+          style={{ width: "97%" }}
+        >
+          <img
+            className=" mx-auto"
+            style={{ width: 540, height: 560, maxWidth: "100%" }}
+            src="https://i.ibb.co/kSrt5s1/home-keywords.webp"
+            alt=""
+          />
         </div>
-       
-        
+        <div>
+          <p className="font-bold float-right mt-14 mr-3">
+            <span className="italic font-normal">Updated on: </span>
+            {date}
+          </p>
+        </div>
       </div>
     </div>
   );
