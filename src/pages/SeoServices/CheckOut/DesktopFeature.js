@@ -3,10 +3,23 @@ import React from "react";
 
 const DesktopFeature = () => {
   const current = new Date();
-  const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-  const d = new Date();
-  let name = month[d.getMonth()];
-  const date = `${current.getDate()} ${name} ${current.getFullYear()}`;
+  const month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const date = `${current.getDate()} ${
+    month[current.getMonth()]
+  } ${current.getFullYear()}`;
 
   return (
     <div className="min-h-screen lg:flex w-11/12 mx-auto pt-20">

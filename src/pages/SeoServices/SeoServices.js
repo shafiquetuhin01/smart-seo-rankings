@@ -6,6 +6,7 @@ import ClientPortfolio from "./ClientPortfolio/ClientPortfolio";
 import ClientTestimonial from "./ClientTestimonial/ClientTestimonial";
 import ContentDriven from "./ContentDriven/ContentDriven";
 import FeaturedBlog from "./FeaturedBlog/FeaturedBlog";
+import Milestone from "./Milestone/Milestone";
 import OnPageSeo from "./OnPageSeo/OnPageSeo";
 import ReviewStudies from "./ReviewStudies/ReviewStudies";
 import SeoHero from "./SeoHero/SeoHero";
@@ -27,6 +28,7 @@ const SeoServices = () => {
       <FeaturedBlog />
       <CheckOut />
       <ClientFeatured />
+      <Milestone />
     </>
   );
 };
