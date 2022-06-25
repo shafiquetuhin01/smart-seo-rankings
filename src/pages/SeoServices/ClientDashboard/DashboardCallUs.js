@@ -1,17 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
-const SeoCallUs = () => {
+const DashboardCallUs = () => {
   return (
     <div className="mx-20 mt-12 pb-10">
-      <h2 className="text-3xl text-center text-secondary font-bold italic">
-        Grow Your Business
-        <span className="text-accent">Perfect SEO Strategy </span>Online With
-        Confidence!
-      </h2>
+      <h2 className="text-4xl py-3 text-center text-accent font-bold italic">
+      Get More <span className="text-secondary">Traffic, Calls & More Sales!</span></h2>
       <p className="text-3xl mt-2 mb-8 text-accent text-center italic font-bold">
         Call us at:{" "}
-        <Link to="/phone" className="text-6xl text-accent">
+        <Link to="/phone" className="text-5xl text-accent">
           855-444-4777
         </Link>
       </p>
@@ -27,4 +23,4 @@ const SeoCallUs = () => {
   );
 };
 
-export default SeoCallUs;
+export default DashboardCallUs;
