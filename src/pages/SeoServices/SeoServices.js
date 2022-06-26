@@ -6,6 +6,7 @@ import ClientFeatured from "./ClientFeatured/ClientFeatured";
 import ClientPortfolio from "./ClientPortfolio/ClientPortfolio";
 import ClientTestimonial from "./ClientTestimonial/ClientTestimonial";
 import ContentDriven from "./ContentDriven/ContentDriven";
+import DataDriven from "./DataDriven/DataDriven";
 import FeaturedBlog from "./FeaturedBlog/FeaturedBlog";
 import Milestone from "./Milestone/Milestone";
 import OnPageSeo from "./OnPageSeo/OnPageSeo";
@@ -33,6 +34,7 @@ const SeoServices = () => {
       <Milestone />
       <ClientDashboard />
       <WhyChoose />
+      <DataDriven />
     </>
   );
 };
