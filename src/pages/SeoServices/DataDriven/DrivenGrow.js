@@ -31,7 +31,7 @@ const DrivenGrow = () => {
             All our SEO packages are beyond flexible, so you can pick the
             services you need according to your business’s marketing
             growth-related goals. Our SEO professionals combine on-page,
-            off-page, link building, and other SEO activities to achieve amazing
+            off-page, <Link className="underline font-bold" to="#">link building</Link>, and other <Link className="underline font-bold" to="#">SEO activities </Link>to achieve amazing
             results for your business.
           </p>
         </div>

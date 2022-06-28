@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../components/Footer/Footer";
 import Awards from "./Awards/Awards";
 import CheckOut from "./CheckOut/CheckOut";
 import ClientDashboard from "./ClientDashboard/ClientDashboard";
@@ -35,6 +36,7 @@ const SeoServices = () => {
       <ClientDashboard />
       <WhyChoose />
       <DataDriven />
+      <Footer />
     </>
   );
 };
