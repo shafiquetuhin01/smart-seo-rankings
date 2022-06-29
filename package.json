@@ -32,7 +32,8 @@
     "ssr-window": "^4.0.2",
     "stripe": "^9.5.0",
     "swiper": "^8.2.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "react-scripts start",
