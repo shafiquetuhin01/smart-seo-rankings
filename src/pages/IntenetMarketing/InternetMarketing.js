@@ -1,9 +1,12 @@
 import React from 'react';
+import InternetClientReview from './InternetClientReview/InternetClientReview';
+import InternetHero from './InternetHero/InternetHero';
 
 const InternetMarketing = () => {
     return (
         <div>
-            <h2>This is internet marketing page</h2>
+            <InternetHero />
+            <InternetClientReview />
         </div>
     );
 };

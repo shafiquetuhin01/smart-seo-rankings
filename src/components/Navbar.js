@@ -213,7 +213,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden lg:flex z-10">
         <li className="list-none">
           <Link to="/internet-marketing">
             <Icons.FaHome className="flex items-center justify-center text-4xl text-white mr-2 " />
