@@ -1,0 +1,29 @@
+.h6-color h6{
+    font-size: 18px;
+    font-weight: 700;
+    color:#0e2e67;
+    line-height: 15px;
+}
+.slick-current{
+    background-color: #0E2E67;
+    color: white;
+    border: none;
+    border-radius: 10px ;
+}
+.slick-current:hover{
+    border: none;
+    color: #0E2E67;
+    background-color: #0E2E67;
+}
+
+.slick-current h6{
+    color: white;
+    
+}
+.slick-current h6:hover{
+    color: #0E2E67;
+    
+}
+
+
+

@@ -3,7 +3,7 @@ import React from "react";
 const FeaturedCard = () => {
   return (
     <div className="lg:flex items-center justify-center gap-5 pb-10 mx-auto ">
-      <div class="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -11,8 +11,8 @@ const FeaturedCard = () => {
             alt="Shoes"
           />
         </figure>
-        <div class="card-body w-full  ">
-          <h2 class="text-lg font-bold left">
+        <div className="card-body w-full  ">
+          <h2 className="text-lg font-bold left">
             A Beginner’s Guide to Optimizing Web Content
           </h2>
           <p className="text-sm justify ">
@@ -20,12 +20,12 @@ const FeaturedCard = () => {
             still one of the most important aspects of running an online
             business...
           </p>
-          <div class="card-actions justify-start">
-            <button class="btn btn-primary">Read More</button>
+          <div className="card-actions justify-start">
+            <button className="btn btn-primary">Read More</button>
           </div>
         </div>
       </div>
-      <div class="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -33,8 +33,8 @@ const FeaturedCard = () => {
             alt="Shoes"
           />
         </figure>
-        <div class="card-body w-full  ">
-          <h2 class="text-lg font-bold left">
+        <div className="card-body w-full  ">
+          <h2 className="text-lg font-bold left">
             A Beginner’s Guide to Optimizing Web Content
           </h2>
           <p className="text-sm justify ">
@@ -42,12 +42,12 @@ const FeaturedCard = () => {
             still one of the most important aspects of running an online
             business...
           </p>
-          <div class="card-actions justify-start">
-            <button class="btn btn-primary">Read More</button>
+          <div className="card-actions justify-start">
+            <button className="btn btn-primary">Read More</button>
           </div>
         </div>
       </div>
-      <div class="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -55,8 +55,8 @@ const FeaturedCard = () => {
             alt="Shoes"
           />
         </figure>
-        <div class="card-body w-full  ">
-          <h2 class="text-lg font-bold left">
+        <div className="card-body w-full  ">
+          <h2 className="text-lg font-bold left">
             A Beginner’s Guide to Optimizing Web Content
           </h2>
           <p className="text-sm justify ">
@@ -64,12 +64,12 @@ const FeaturedCard = () => {
             still one of the most important aspects of running an online
             business...
           </p>
-          <div class="card-actions justify-start">
-            <button class="btn btn-primary">Read More</button>
+          <div className="card-actions justify-start">
+            <button className="btn btn-primary">Read More</button>
           </div>
         </div>
       </div>
-      <div class="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -77,8 +77,8 @@ const FeaturedCard = () => {
             alt="Shoes"
           />
         </figure>
-        <div class="card-body w-full  ">
-          <h2 class="text-lg font-bold left">
+        <div className="card-body w-full  ">
+          <h2 className="text-lg font-bold left">
             A Beginner’s Guide to Optimizing Web Content
           </h2>
           <p className="text-sm justify ">
@@ -86,8 +86,8 @@ const FeaturedCard = () => {
             still one of the most important aspects of running an online
             business...
           </p>
-          <div class="card-actions justify-start">
-            <button class="btn btn-primary">Read More</button>
+          <div className="card-actions justify-start">
+            <button className="btn btn-primary">Read More</button>
           </div>
         </div>
       </div>

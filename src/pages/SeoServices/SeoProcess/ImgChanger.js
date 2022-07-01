@@ -45,11 +45,17 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:"#198B9A"}} className="text-white font-bold"> 2</span>
+                <span
+                  style={{ backgroundColor: "#198B9A" }}
+                  className="text-white font-bold"
+                >
+                  {" "}
+                  2
+                </span>
                 Website Audit
               </h4>
             </div>
-            <p  style={{ fontSize: "16px" }} className="justify mt-2">
+            <p style={{ fontSize: "16px" }} className="justify mt-2">
               Here, an extensive analysis is performed that puts your site
               through multiple tests, identifying shortcomings and outlining
               results along with recommendations.
@@ -70,7 +76,12 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:"#F2701D"}}  className="text-white font-bold">3</span>
+                <span
+                  style={{ backgroundColor: "#F2701D" }}
+                  className="text-white font-bold"
+                >
+                  3
+                </span>
                 Content Plan
               </h4>
             </div>
@@ -95,7 +106,13 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:'#54B916'}} className="text-white font-bold"> 4</span>
+                <span
+                  style={{ backgroundColor: "#54B916" }}
+                  className="text-white font-bold"
+                >
+                  {" "}
+                  4
+                </span>
                 Content Creation
               </h4>
             </div>
@@ -120,7 +137,13 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:'#E81445'}} className="text-white font-bold"> 5</span>
+                <span
+                  style={{ backgroundColor: "#E81445" }}
+                  className="text-white font-bold"
+                >
+                  {" "}
+                  5
+                </span>
                 Promotional Content
               </h4>
             </div>
@@ -145,7 +168,13 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:'#123575'}} className="text-white font-bold"> 6</span>
+                <span
+                  style={{ backgroundColor: "#123575" }}
+                  className="text-white font-bold"
+                >
+                  {" "}
+                  6
+                </span>
                 Weekly Activity Sheets
               </h4>
             </div>
@@ -171,7 +200,13 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:'#EC0C2B'}} className="text-white font-bold"> 7</span>
+                <span
+                  style={{ backgroundColor: "#EC0C2B" }}
+                  className="text-white font-bold"
+                >
+                  {" "}
+                  7
+                </span>
                 Weekly Ranking Sheets
               </h4>
             </div>
@@ -197,7 +232,13 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:'#199A8E'}} className="text-white font-bold"> 8</span>
+                <span
+                  style={{ backgroundColor: "#199A8E" }}
+                  className="text-white font-bold"
+                >
+                  {" "}
+                  8
+                </span>
                 Completion Report
               </h4>
             </div>
@@ -222,8 +263,14 @@ const ImgChanger = () => {
                 style={{ fontSize: "18px" }}
                 className="flex items-center text-white font-bold"
               >
-                <span style={{backgroundColor:'#000000'}} className=" text-white font-bold"> 9</span>It’s
-                Time to Renew!
+                <span
+                  style={{ backgroundColor: "#000000" }}
+                  className=" text-white font-bold"
+                >
+                  {" "}
+                  9
+                </span>
+                It’s Time to Renew!
               </h4>
             </div>
             <p style={{ fontSize: "16px" }} className="justify mt-2"></p>
@@ -234,18 +281,16 @@ const ImgChanger = () => {
   ];
 
   const sliderRef = useRef(null);
-  if (sliderRef) {
-  }
   useEffect(() => {
-    console.log("This is slider ref", sliderRef.current);
+    console.log(sliderRef.current);
   }, []);
   return (
     <div className="w-90">
       <div className="mx-auto w-11/12">
-        <Slider ref={sliderRef} slidesToShow={3} slidesToScroll={3}>
+        <Slider ref={sliderRef} slidesToShow={3} arrows={false} slidesToScroll={3}>
           {items.map((item, index) => (
             <div key={index} className="flex items-center justify-center w-12">
-              <ul class="flex items-center justify-center">
+              <ul className="flex items-center justify-center">
                 <h2 className="m-6">{item.name}</h2>
               </ul>
             </div>

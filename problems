@@ -1,5 +1,5 @@
 1. li last child problem
-<ul class="seo-timeline scrollbar-dynamic flex items-center justify-center gap-10">
+<ul className="seo-timeline scrollbar-dynamic flex items-center justify-center gap-10">
         <li>
           <h4>
             <span>1</span>Keyword Research Document

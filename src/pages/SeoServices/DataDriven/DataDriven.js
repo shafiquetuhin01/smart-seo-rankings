@@ -11,20 +11,20 @@ const DataDriven = () => {
           Why Do SEO? It’s{" "}
           <span className="text-secondary">Scalable & Data-Driven!</span>
         </h2>
-        <div class="mx-auto">
-          <div class="hero-content flex-col lg:flex-row-reverse">
+        <div className="mx-auto">
+          <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="w-4/12">
                 <ReactPlayer height={350} width={400} controls url="https://youtu.be/nkZAm413MdA" />
             </div>
             
             <div className="w-8/12">
-              <h3 class="text-xl font-bold justify">
+              <h3 className="text-xl font-bold justify">
                 SEO’s importance in a digital-first world is indisputable.
                 According to Ahrefs, it helps businesses (regardless of their
                 scale) cut through the noise by making them visible on the front
                 page of the internet—search engine results pages (SERPs).
               </h3>
-              <p class="py-6 text-xl justify">
+              <p className="py-6 text-xl justify">
                 Great SEO leverages powerful analytics and keyword research to
                 attract qualified, local traffic to your business’s website,
                 supercharging its sales potential and making it a money-making
