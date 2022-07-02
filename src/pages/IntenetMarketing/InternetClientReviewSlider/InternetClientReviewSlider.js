@@ -481,7 +481,7 @@ const InternetClientReviewSlider = () => {
   useEffect(() => {
     console.log(sliderRef.current);
   }, []);
-  const [items, setItems] = useState("");
+  const [items, setItems] = useState(firstItem);
   const [newItems, setNewItems] = useState(items);
   const changeNewItems = (newItems) => {
     setNewItems(newItems);

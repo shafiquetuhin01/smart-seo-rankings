@@ -24,5 +24,12 @@ code {
   li {
     @apply leading-7;
   }
+ h5 {
+    @apply text-4xl;
+    @apply text-secondary;
+    @apply font-bold;
+    @apply text-center;
+    @apply my-6;
+  }
   
 }
