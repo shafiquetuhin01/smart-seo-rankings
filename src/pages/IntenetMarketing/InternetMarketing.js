@@ -17,6 +17,7 @@ const InternetMarketing = () => {
             <InternetConfused />
             <InternetFAQ />
             <InternetGetInTouch />
+            
         </div>
     );
 };
