@@ -520,7 +520,7 @@ const FooterMain = () => {
           </section>
           <section>
               <div className="flex justify-between py-5">
-                <h5>Copyright &copy; {thisYear} <span className="underline">Smart SEO Rankings</span>. All rights reserved. <span className="underline">Privacy Policy</span> and <span className="underline">Conditions of Use</span></h5>
+                <h4>Copyright &copy; {thisYear} <span className="underline">Smart SEO Rankings</span>. All rights reserved. <span className="underline">Privacy Policy</span> and <span className="underline">Conditions of Use</span></h4>
                 <div className="">
                   <li className="list-none flex justify-center">
                     <Link className="hover:text-secondary text-white mr-3 text-lg" to="#"><FaFacebookF/></Link>

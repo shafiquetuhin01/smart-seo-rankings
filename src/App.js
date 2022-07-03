@@ -34,6 +34,7 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
 import Request from "./pages/Request/Request";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -107,6 +108,7 @@ const App = () => {
           path="/website-maintenance"
           element={<WebsiteMaintenance />}
         ></Route>
+        
         <Route
           path="/website-optimization"
           element={<WebsiteOptimization />}
@@ -116,6 +118,7 @@ const App = () => {
           element={<NotFound />}
         ></Route>
       </Routes>
+      <Footer />
     </>
   );
 };
