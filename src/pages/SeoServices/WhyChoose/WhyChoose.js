@@ -8,7 +8,7 @@ const WhyChoose = () => {
         <span className="text-secondary">SEO Services</span>
       </h2>
       <div className="grid grid-cols-3 gap-6">
-        <div className="min-h-screen border-[3px] border-[#1E78CC] col-span-1">
+        <div className="min-h-screen border-[3px] border-[#1E78CC] col-span-3 lg:col-span-1">
           <div>
             <img
               className="mx-auto py-3"
@@ -38,8 +38,8 @@ const WhyChoose = () => {
             </p>
           </div>
         </div>
-        <div className="min-h-screen mx-auto col-span-2 grid grid-cols-1 sm:grid-cols-2">
-          <div className="flex justify-center p-2">
+        <div className="min-h-screen col-span-3 lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 justify-center mx-auto w-full">
+          <div className="flex justify-center p-2 mx-auto w-full">
             <div className="mr-2">
               <img
                 className="max-w-[65px] max-h-[65px] object-cover"
@@ -47,7 +47,7 @@ const WhyChoose = () => {
                 alt="circle-check"
               />
             </div>
-            <div>
+            <div className="">
               <h3 className="text-xl font-bold">40,000+ Projects Completed!</h3>
               <p className="text-[16px] mt-2">
                 This is a testament to the incredible scale we operate in and

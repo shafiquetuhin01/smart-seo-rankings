@@ -9,7 +9,7 @@ const DrivenGrow = () => {
         <span className="text-accent">With Confidence With SearchBerg!</span>
       </h3>
       <div className="lg:flex items-center justify-center gap-4">
-        <div className="text-xl w-6/12">
+        <div className="text-xl w-full lg:w-6/12">
           <h2 className="font-bold">
             We will create a long-term SEO strategy for your website that will
             start bringing in traffic, rankings and revenue within weeks!
@@ -36,7 +36,7 @@ const DrivenGrow = () => {
           </p>
         </div>
         <div
-          className="right w-6/12 relative"
+          className="right w-full lg:w-6/12 relative"
           style={{
             backgroundImage: `url("https://i.ibb.co/vJKgSjM/banner-2.webp")`,
 

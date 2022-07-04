@@ -4,19 +4,19 @@ import "./SeoHero.css";
 import { Link } from "react-router-dom";
 const SeoHero = () => {
   return (
-    <div className="flex justify-center items-center mx-28 mt-5">
+    <div className="lg:flex justify-center items-center lg:mx-28 mt-5">
       <div
-        className="img-padding bg-no-repeat w-9/12 "
+        className="img-padding bg-no-repeat w-full lg:w-9/12 "
         style={{ backgroundImage: `url("https://i.ibb.co/bJWHq8v/girl.webp")` }}
       >
-        <h2 className="text-6xl">
+        <h2 className="lg:text-6xl text-4xl text-center mx-auto">
           Get More Traffic, More Calls & More Sales!!
         </h2>
-        <h2 className="text-3xl mt-2">
+        <h2 className="text-3xl mt-2 text-center">
           Start Ranking On <span className="text-primary">Google</span> In Less
           Than
         </h2>
-        <div className="flex items-center">
+        <div className="flex items-center justify-center">
           <div className=" w-1/4">
               <p className="hr-color"></p>
               <p className="hr-color-2nd mt-2"></p>
@@ -55,7 +55,7 @@ const SeoHero = () => {
           </div>
         </div>
       </div>
-      <div className="w-3/12 mx-auto">
+      <div className="w-full lg:w-3/12 request-form-sm mt-10 lg:mt-2">
         <RequestForm />
       </div>
     </div>

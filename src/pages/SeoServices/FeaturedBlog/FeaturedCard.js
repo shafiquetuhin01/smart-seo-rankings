@@ -3,7 +3,7 @@ import React from "react";
 const FeaturedCard = () => {
   return (
     <div className="lg:flex items-center justify-center gap-5 pb-10 mx-auto ">
-      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="mx-auto card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -25,7 +25,7 @@ const FeaturedCard = () => {
           </div>
         </div>
       </div>
-      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="mx-auto card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -47,7 +47,7 @@ const FeaturedCard = () => {
           </div>
         </div>
       </div>
-      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="mx-auto card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"
@@ -69,7 +69,7 @@ const FeaturedCard = () => {
           </div>
         </div>
       </div>
-      <div className="card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
+      <div className="mx-auto card shadow-gray-500 card-compact w-96 bg-base-100 shadow-xl mt-5">
         <figure>
           <img
             className="w-full"

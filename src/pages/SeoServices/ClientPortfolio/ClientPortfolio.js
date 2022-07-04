@@ -10,7 +10,7 @@ const ClientPortfolio = () => {
     setItems(items);
   };
   return (
-    <div className="border-y py-10 border-black">
+    <div className="hidden lg:block border-y py-10 border-black">
       <div className="w-9/12 mx-auto">
         <h2 className="text-4xl text-accent text-center font-bold py-3">
           Check Out Our{" "}

@@ -285,7 +285,7 @@ const ImgChanger = () => {
     console.log(sliderRef.current);
   }, []);
   return (
-    <div className="w-90">
+    <div className="hidden lg:block w-90">
       <div className="mx-auto w-11/12">
         <Slider ref={sliderRef} slidesToShow={3} arrows={false} slidesToScroll={3}>
           {items.map((item, index) => (

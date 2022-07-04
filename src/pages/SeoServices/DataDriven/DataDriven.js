@@ -13,8 +13,8 @@ const DataDriven = () => {
         </h2>
         <div className="mx-auto">
           <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className="w-4/12">
-                <ReactPlayer height={350} width={400} controls url="https://youtu.be/nkZAm413MdA" />
+            <div className="w-full mx-auto lg:w-4/12">
+                <ReactPlayer className='' height={350} width={400} controls url="https://youtu.be/nkZAm413MdA" />
             </div>
             
             <div className="w-8/12">

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../components/Footer/Footer";
+import PageTitle from "../../components/PageTitle/PageTitle";
 import Awards from "./Awards/Awards";
 import CheckOut from "./CheckOut/CheckOut";
 import ClientDashboard from "./ClientDashboard/ClientDashboard";
@@ -16,11 +16,10 @@ import SeoHero from "./SeoHero/SeoHero";
 import SeoProcess from "./SeoProcess/SeoProcess";
 import WhyChoose from "./WhyChoose/WhyChoose";
 
-
-
 const SeoServices = () => {
   return (
     <>
+      <PageTitle title="Home"></PageTitle>
       <SeoHero />
       <Awards />
       <ContentDriven />
@@ -36,7 +35,6 @@ const SeoServices = () => {
       <ClientDashboard />
       <WhyChoose />
       <DataDriven />
-      <Footer />
     </>
   );
 };

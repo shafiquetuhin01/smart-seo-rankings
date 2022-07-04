@@ -7,7 +7,7 @@ const ClientFeatured = () => {
         We Have Helped Our Clients{" "}
         <span className="text-secondary mt-3">Get Featured On</span>
       </h2>
-      <div className="lg:grid lg:grid-cols-4 client-featured-img place-items-center my-10">
+      <div className="lg:grid items-center grid gap-3 lg:grid-cols-4 client-featured-img place-items-center my-10">
         <div>
           <img
             src="https://i.ibb.co/6RkC9GF/forbes.webp"

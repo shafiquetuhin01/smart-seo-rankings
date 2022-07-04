@@ -4,7 +4,7 @@ import TestimonialCarousel from "./TestimonialCarousel";
 
 const ClientTestimonial = () => {
   return (
-    <div className="py-10 border-solid border-black border-y mx-auto">
+    <div className="hidden lg:block py-10 border-solid border-black border-y mx-auto">
       <div className="w-8/12 mx-auto">
         <h2 className="font-bold text-accent text-4xl text-center">
           Read Our <span className="text-secondary">Client Testimonials!</span>

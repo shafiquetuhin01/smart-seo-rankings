@@ -1,4 +1,5 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
 import DigitalMarketing from './DigitalMarketing/DigitalMarketing';
 import InternetClientReview from './InternetClientReview/InternetClientReview';
 import InternetClientReviewSlider from './InternetClientReviewSlider/InternetClientReviewSlider';
@@ -10,6 +11,7 @@ import InternetHero from './InternetHero/InternetHero';
 const InternetMarketing = () => {
     return (
         <div>
+            <PageTitle title="Internet Marketing"></PageTitle>
             <InternetHero />
             <InternetClientReview />
             <InternetClientReviewSlider />

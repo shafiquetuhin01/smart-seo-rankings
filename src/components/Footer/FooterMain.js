@@ -8,9 +8,9 @@ const FooterMain = () => {
       <div className="w-11/12 mx-auto text-white font-[500]">
         {/* footer top  */}
         <section>
-          <div className="grid md:grid-cols-3 grid-cols-1 py-8 border-b border-blue-50 gap-7">
-            <div className="pr-10 pb-4 border-r-[1px] border-blue-50">
-              <h2 className=" uppercase text-lg font-bold">
+          <div className="grid md:grid-cols-3 grid-cols-1 py-8 md:border-b md:border-blue-50 gap-7">
+            <div className="pr-10 pb-4 md:border-r-[1px] md:border-blue-50">
+              <h2 className=" uppercase text-lg font-bold text-center md:text-left">
                 ABOUT <span className="text-secondary">SMArt seo rankings</span>
               </h2>
               <p className="text-[15px] leading-[1.45] mt-4 ">
@@ -59,7 +59,7 @@ const FooterMain = () => {
               />
             </div>
           </div>
-          <section className="lg:grid lg:grid-cols-5 grid-cols-1 mt-6 py-5 border-b-[1px] border-white">
+          <section className="lg:grid lg:grid-cols-5 grid-cols-1 sm:grid sm:grid-cols-2 mt-6 py-5 border-b-[1px] border-white">
             <div className="">
               <li className="list-none ">
                 <Link

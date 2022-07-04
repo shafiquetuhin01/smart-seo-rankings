@@ -1,6 +1,5 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/images/logo.png";
 
 const NavbarTop = () => {
   const navigate = useNavigate();
@@ -11,23 +10,14 @@ const NavbarTop = () => {
     navigate("/login");
   };
   return (
-    <div
-      className="bg-white"
-      style={{
-        borderTop: "4px solid #0B467A",
-        borderBottom: "4px solid #F47A1E",
-      }}
-    >
+    <div className="w-full bg-white border-y-4 border-t-[#0B467A] border-b-[#F47A1E]">
       <div
         className="lg:flex justify-between items-center mx-16"
         style={{ paddingBottom: "10px", paddingTop: "10px" }}
       >
         <div className="flex justify-items-center items-center">
-          <div
-            style={{ borderRight: "1px solid #0B365B" }}
-            className="my-2 pr-2"
-          >
-            <img className="h-28 w-44" src={logo} alt="logo" />
+          <div className="my-2 pr-2 border-r border-r-[#0B365B]">
+            <img className="h-28 w-44" src="https://i.ibb.co/51w9GN8/logo.png" alt="logo" />
           </div>
           <div>
             <p className="sm:text-xl ml-7 italic font-bold text-1xl text-accent">

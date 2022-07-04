@@ -12,7 +12,7 @@ const FooterCallUs = () => {
       <div className="py-1 text-center">
         <h3 className="text-white italic font-bold text-[36px]">
           Reach Out To Us Today! Call
-          <span className="text-secondary text-[53px]"> 855-444-4777</span>
+          <span className="text-secondary text-3xl lg:text-[53px]"> 855-444-4777</span>
         </h3>
       </div>
     </section>

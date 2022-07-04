@@ -6,18 +6,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import "./ReviewCarousel.css";
+import { Link } from "react-router-dom";
 
 const ReviewCarousel = () => {
   return (
     <>
-      <div className="review-carousel py-10">
+      <div className="review-carousel lg:py-10 py-2">
         <Swiper
           navigation={true}
           modules={[Navigation]}
           className="mySwiper swiper"
         >
           <SwiperSlide>
-            <div className="pt-6 py-10" style={{ backgroundColor: "#F0F0F0" }}>
+            <div className="pt-6 lg:py-10 py-2" style={{ backgroundColor: "#F0F0F0" }}>
               <div className="block">
                 <img
                   className="mx-auto py-6"
@@ -27,13 +28,13 @@ const ReviewCarousel = () => {
               </div>
               <div className="mx-10 text-left">
                 <p className=" text-justify">
-                  <a
+                  <Link
                     className="text-primary"
-                    href="https://westernmassautoinsurance.com/"
+                    to="https://westernmassautoinsurance.com/"
                     target="_blank"
                   >
                     Western Mass Auto Insurance{" "}
-                  </a>
+                  </Link>
                   provides auto, motorcycle, apartment, and home insurance. They
                   offer affordable services through low cost and low down
                   payment insurance services. When we started working with
@@ -100,52 +101,52 @@ const ReviewCarousel = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://westernmassautoinsurance.com/renters-insurance-things-you-should-know/"
+                            to="https://westernmassautoinsurance.com/renters-insurance-things-you-should-know/"
                           >
                             View Infographics
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://westernmassautoinsurance.com/tips-to-follow-when-buying-a-car/"
+                            to="https://westernmassautoinsurance.com/tips-to-follow-when-buying-a-car/"
                           >
                             View Blog Post 1
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://westernmassautoinsurance.com/understanding-home-insurance-in-massachusetts/"
+                            to="https://westernmassautoinsurance.com/understanding-home-insurance-in-massachusetts/"
                           >
                             View Blog Post 2
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://westernmassauto.tumblr.com/post/190290418104/why-is-it-essential-to-have-auto-insurance"
+                            to="https://westernmassauto.tumblr.com/post/190290418104/why-is-it-essential-to-have-auto-insurance"
                           >
                             View Article 1
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://westernmassauto.tumblr.com/post/190422013183/financial-goals-for-homeowners-this-new-yearall"
+                            to="https://westernmassauto.tumblr.com/post/190422013183/financial-goals-for-homeowners-this-new-yearall"
                           >
                             View Article 2
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
@@ -165,13 +166,13 @@ const ReviewCarousel = () => {
               </div>
               <div className="mx-10 text-left">
                 <p>
-                  <a
-                    href="https://www.licetroopers.com/"
+                  <Link
+                    to="https://www.licetroopers.com/"
                     rel="nofollow"
                     target="_blank"
                   >
                     Lice Troopers
-                  </a>{" "}
+                  </Link>{" "}
                   is a professional, all-natural-lice removal service operating
                   in several parts of Florida, New York and New Jersey. When we
                   started working with the company, we understood their vision:
@@ -232,57 +233,57 @@ const ReviewCarousel = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.licetroopers.com/blog/Getting+Rid+of+Lice"
+                            to="https://www.licetroopers.com/blog/Getting+Rid+of+Lice"
                             rel="nofollow"
                           >
                             View Infograph
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.licetroopers.com/blog/Keeping+Lice+Off+Field"
+                            to="https://www.licetroopers.com/blog/Keeping+Lice+Off+Field"
                             rel="nofollow"
                           >
                             View Blog Post
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://techcrunch.com/2011/05/17/almost-half-of-all-online-orders-now-include-free-shipping/"
+                            to="https://techcrunch.com/2011/05/17/almost-half-of-all-online-orders-now-include-free-shipping/"
                             rel="nofollow"
                           >
                             View Press Release
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.apsense.com/archive/why-is-it-extremely-important-to-address-a-lice-outbreak.html"
+                            to="https://www.apsense.com/archive/why-is-it-extremely-important-to-address-a-lice-outbreak.html"
                             rel="nofollow"
                           >
                             View Article
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.youtube.com/watch?v=4o-FdhtZLzA&amp;feature=youtu.be"
+                            to="https://www.youtube.com/watch?v=4o-FdhtZLzA&amp;feature=youtu.be"
                             rel="nofollow"
                           >
                             View Video
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
@@ -305,13 +306,13 @@ const ReviewCarousel = () => {
                   An award-winning, full service video production company led by
                   a husband-wife duo in Orange County; In a market that’s
                   already saturated with similar service providers,{" "}
-                  <a
-                    href="https://336productions.com/"
+                  <Link
+                    to="https://336productions.com/"
                     target="_blank"
                     rel="nofollow"
                   >
                     336 Productions
-                  </a>{" "}
+                  </Link>{" "}
                   needed a team with the right expertise to help them stand out
                   among competitors—and that’s where Search Berg came in.
                 </p>
@@ -370,58 +371,58 @@ const ReviewCarousel = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.facebook.com/37855236567/photos/a.58130516567.80601.37855236567/10154904304001568/?type=3&amp;theater"
+                            to="https://www.facebook.com/37855236567/photos/a.58130516567.80601.37855236567/10154904304001568/?type=3&amp;theater"
                             rel="nofollow"
                           >
                             View Infograph
-                          </a>
+                          </Link>
                         </td>
                       </tr>
 
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://336productions.com/tips-designing-effective-educational-videos/"
+                            to="https://336productions.com/tips-designing-effective-educational-videos/"
                             rel="nofollow"
                           >
                             View Blog Post 1
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://336productions.com/creative-video-content-ideas-promote-event/"
+                            to="https://336productions.com/creative-video-content-ideas-promote-event/"
                             rel="nofollow"
                           >
                             View Blog Post 2
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://prsync.com/-productions/-productions-acquires-new-cameras-and-video-equipment-to-maintain-their-competitive-edge-2292152/"
+                            to="https://prsync.com/-productions/-productions-acquires-new-cameras-and-video-equipment-to-maintain-their-competitive-edge-2292152/"
                             rel="nofollow"
                           >
                             View Press Release
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://336-productions.blogspot.com/2018/02/commercial-successthe-magic-behind.html"
+                            to="https://336-productions.blogspot.com/2018/02/commercial-successthe-magic-behind.html"
                             rel="nofollow"
                           >
                             View Article
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
@@ -441,13 +442,13 @@ const ReviewCarousel = () => {
               </div>
               <div className="mx-10 text-left">
                 <p>
-                  <a
-                    href="https://www.hairextensionsofhouston.com/"
+                  <Link
+                    to="https://www.hairextensionsofhouston.com/"
                     target="_blank"
                     rel="nofollow"
                   >
                     Hair Extensions of Houston
-                  </a>{" "}
+                  </Link>{" "}
                   is a full-service salon, providing expert hair extension
                   installation and maintenance, coloring, and styling services.
                   Much like their clear brand vision, they also had specific
@@ -515,58 +516,58 @@ const ReviewCarousel = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.hairextensionsofhouston.com/things-you-need-to-know-about-loc-extensions/"
+                            to="https://www.hairextensionsofhouston.com/things-you-need-to-know-about-loc-extensions/"
                             rel="nofollow"
                           >
                             View Infograph
-                          </a>
+                          </Link>
                         </td>
                       </tr>
 
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://hairextensionsofhouston.wordpress.com/2019/09/02/7-must-haves-in-your-hair-care-tool-kit/"
+                            to="https://hairextensionsofhouston.wordpress.com/2019/09/02/7-must-haves-in-your-hair-care-tool-kit/"
                             rel="nofollow"
                           >
                             View Article
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.hairextensionsofhouston.com/youre-ruining-your-extensions-by-doing-these-things/"
+                            to="https://www.hairextensionsofhouston.com/youre-ruining-your-extensions-by-doing-these-things/"
                             rel="nofollow"
                           >
                             View Blog Post
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.pr.com/press-release/787248"
+                            to="https://www.pr.com/press-release/787248"
                             rel="nofollow"
                           >
                             View Press Release
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.youtube.com/watch?v=VMyT9K0AQvU"
+                            to="https://www.youtube.com/watch?v=VMyT9K0AQvU"
                             rel="nofollow"
                           >
                             View Video
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
@@ -586,13 +587,13 @@ const ReviewCarousel = () => {
               </div>
               <div className="mx-10 text-left">
                 <p>
-                  <a
-                    href="https://www.varicoseveinsdoctorsnewyork.com/"
+                  <Link
+                    to="https://www.varicoseveinsdoctorsnewyork.com/"
                     target="_blank"
                     rel="nofollow"
                   >
                     Varicose Veins Doctors New York
-                  </a>{" "}
+                  </Link>{" "}
                   is a Manhattan-based clinic. They offer treatments for a range
                   of vein diseases and wanted to hire a team of SEO experts to
                   spread awareness about the treatment and prevention of vein
@@ -657,59 +658,59 @@ const ReviewCarousel = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.varicoseveinsdoctorsnewyork.com/varicose-veins-infographic/"
+                            to="https://www.varicoseveinsdoctorsnewyork.com/varicose-veins-infographic/"
                             rel="nofollow"
                           >
                             View Infograph
-                          </a>
+                          </Link>
                         </td>
                       </tr>
 
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://varicoseveinsdoctors.tumblr.com/post/613640779535171584/body-contouring-through-emsculpt-all-you-need-to"
+                            to="https://varicoseveinsdoctors.tumblr.com/post/613640779535171584/body-contouring-through-emsculpt-all-you-need-to"
                             rel="nofollow"
                           >
                             View Article
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.varicoseveinsdoctorsnewyork.com/what-to-do-if-your-leg-cramps-feel-heavy-all-the-time/"
+                            to="https://www.varicoseveinsdoctorsnewyork.com/what-to-do-if-your-leg-cramps-feel-heavy-all-the-time/"
                             rel="nofollow"
                           >
                             View Blog Post
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.pr.com/press-release/801888"
+                            to="https://www.pr.com/press-release/801888"
                             rel="nofollow"
                           >
                             View Press Release
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://youtu.be/MGv2O898vSM"
+                            to="https://youtu.be/MGv2O898vSM"
                             rel="nofollow"
                           >
                             {" "}
                             View Video
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>
@@ -729,13 +730,13 @@ const ReviewCarousel = () => {
               </div>
               <div className="mx-10 text-left">
                 <p>
-                  <a
-                    href="https://ancienthairsecrets.com/"
+                  <Link
+                    to="https://ancienthairsecrets.com/"
                     target="_blank"
                     rel="nofollow"
                   >
                     Ancient Hair Secrets
-                  </a>{" "}
+                  </Link>{" "}
                   has been selling organic hair products to those struggling
                   with a range of hair problems since 2003. In a saturated
                   marketing landscape, the client wanted their unique products
@@ -804,58 +805,58 @@ const ReviewCarousel = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.pinterest.com/pin/324681454390263333"
+                            to="https://www.pinterest.com/pin/324681454390263333"
                             rel="nofollow"
                           >
                             View Infograph
-                          </a>
+                          </Link>
                         </td>
                       </tr>
 
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://ancienthaircaresecrets.blogspot.com/2020/04/4-beard-growing-mistakes-and-how-to.html"
+                            to="https://ancienthaircaresecrets.blogspot.com/2020/04/4-beard-growing-mistakes-and-how-to.html"
                             rel="nofollow"
                           >
                             View Article 1
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://medium.com/@freddixon11154/all-about-greasy-hair-and-how-to-manage-it-be3c52a63e4c"
+                            to="https://medium.com/@freddixon11154/all-about-greasy-hair-and-how-to-manage-it-be3c52a63e4c"
                             rel="nofollow"
                           >
                             View Article 2
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.ancienthairsecrets.com/2020/03/15/test-3/"
+                            to="https://www.ancienthairsecrets.com/2020/03/15/test-3/"
                             rel="nofollow"
                           >
                             View Blog Post 1
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                       <tr>
                         <td>
-                          <a
+                          <Link
                             target="_blank"
-                            href="https://www.ancienthairsecrets.com/2020/03/15/test-2/"
+                            to="https://www.ancienthairsecrets.com/2020/03/15/test-2/"
                             rel="nofollow"
                           >
                             View Blog Post 2
-                          </a>
+                          </Link>
                         </td>
                       </tr>
                     </tbody>

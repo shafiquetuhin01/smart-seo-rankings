@@ -8,25 +8,25 @@ const Milestone = () => {
           Latest SearchBerg Milestones
         </h2>
         <div className="lg:grid lg:grid-cols-4 gap-6 place-items-center pb-8 items-center text-white">
-          <div className="text-center px-8 sm:py-3 border-white border-l">
+          <div className="text-center px-8 sm:py-3 lg:border-white lg:border-l">
             <h3 className="text-[56px] font-bold">40,000+</h3>
             <p className="uppercase text-center font-bold text-[16px]">
               SEO PROJECTS COMPLETED
             </p>
           </div>
-          <div className="text-center px-8 sm:py-3 border-white border-l">
+          <div className="text-center px-8 sm:py-3 lg:border-white lg:border-l">
             <h3 className="text-[56px] font-bold">150,000+</h3>
             <p className="uppercase text-center font-bold text-[16px]">
             CONTENT PIECES PUBLISHED
             </p>
           </div>
-          <div className="text-center px-8 sm:py-3 border-white border-l">
+          <div className="text-center px-8 sm:py-3 lg:border-white lg:border-l">
             <h3 className="text-[56px] font-bold">22,800+</h3>
             <p className="uppercase text-center font-bold text-[16px]">
             INFOGRAPHICS & VIDEOS CREATED
             </p>
           </div>
-          <div className="text-center px-8 sm:py-3 border-white border-l">
+          <div className="text-center px-8 sm:py-3 lg:border-white lg:border-l">
             <h3 className="text-[56px] font-bold">1,000s</h3>
             <p className="uppercase text-center font-bold text-[16px]">
             OF SATISFIED CUSTOMERS
