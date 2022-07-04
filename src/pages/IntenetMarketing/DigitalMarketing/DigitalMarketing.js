@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const DigitalMarketing = () => {
     return (
-        <div className='w-11/12 mx-auto my-3 py-5 bg-[#F3F3F3]'>
+        <div className='w-11/12 mx-auto my-3 py-1 lg:py-5 bg-[#F3F3F3]'>
           <h3 className='my-5 text-4xl font-bold text-center text-secondary'>Digital Marketing Solutions</h3>  
           <div className='lg:grid grid-cols-1 lg:grid-cols-3 gap-4 mx-10'>
             <div className='text-center mt-4'>

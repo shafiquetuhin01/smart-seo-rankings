@@ -3,7 +3,7 @@ import React from 'react';
 const InternetAwards = () => {
     return (
         <div className=''>
-            <div className='grid grid-cols-6 place-items-center py-6 justify-center items-center gap-2 mx-16'>
+            <div className='grid grid-cols-2 lg:grid lg:grid-cols-6 place-items-center py-6 justify-center items-center gap-2 mx-16'>
                                    <img src="https://i.ibb.co/27K9MfJ/top-digital-marketing-2021.webp" alt="" />
                     <img src="https://i.ibb.co/27K9MfJ/top-digital-marketing-2021.webp" alt="" />
                     <img src="https://i.ibb.co/27K9MfJ/top-digital-marketing-2021.webp" alt="" />

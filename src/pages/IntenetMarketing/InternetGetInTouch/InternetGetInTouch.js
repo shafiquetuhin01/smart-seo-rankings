@@ -96,8 +96,8 @@ const InternetGetInTouch = () => {
       style={{ backgroundImage: 'url("https://i.ibb.co/rQnF2h7/1.webp")' }}
     >
       <div className="w-11/12 mx-auto py-6 lg:flex justify-center items-center">
-        <div className="w-6/12 mx-auto">
-          <h4 className="text-[52px] py-5 text-white text-left font-bold leading-[3.5rem]">
+        <div className="w-full lg:w-6/12 mx-auto">
+          <h4 className="text-3xl lg:text-[52px] py-5 text-white text-center lg:text-left font-bold lg:leading-[3.5rem]">
             Get in touch with us to get a{" "}
             <span className="text-secondary">
               free 30-minute no-obligation consultation
@@ -136,7 +136,7 @@ const InternetGetInTouch = () => {
             </div>
           </div>
         </div>
-        <div className="w-6/12 mx-auto">
+        <div className="w-full lg:w-6/12 mx-auto">
           <MyForm />
         </div>
       </div>

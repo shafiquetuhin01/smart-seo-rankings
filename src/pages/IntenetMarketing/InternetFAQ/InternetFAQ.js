@@ -75,15 +75,15 @@ const InternetFAQ = () => {
         <section className='w-11/12 mx-auto'>
             <div className='my-10'>
                 <h5 className='text-accent'>Frequently Asked <span className='text-secondary'>Questions</span></h5>
-                <div className='w-10/12 mx-auto lg:flex justify-center items-center gap-5'>
-                    <div className='w-6/12 mx-auto'>
+                <div className='w-full lg:w-10/12 mx-auto lg:flex justify-center items-center gap-5'>
+                    <div className='w-full lg:w-6/12 mx-auto'>
                         <Faq 
                             data={data}
                             styles={styles}
                             config={config}
                         />
                     </div>
-                    <div className='w-6/12 mx-auto'>
+                    <div className='w-full lg:w-6/12 mx-auto'>
                         <Faq 
                             data={data2}
                             styles={styles}

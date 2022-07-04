@@ -822,7 +822,7 @@ const InternetClientReviewSlider = () => {
   ];
 
   return (
-    <section className="w-11/12 mx-auto py-6 mb-10">
+    <section className="hidden lg:block w-11/12 mx-auto py-6 mb-10">
       <div className="flex justify-center gap-5">
         <div className="w-3/12 flex justify-center px-2 items-center mr-2">
           <div className="flex flex-col items-center gap-2 justify-center">
