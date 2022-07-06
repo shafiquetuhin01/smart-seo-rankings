@@ -1,11 +1,13 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
 
 const PaidMarketing = () => {
-    return (
-        <div>
-            <h2>This is PaidMarketing page</h2>
-        </div>
-    );
+  return (
+    <div>
+      <PageTitle title="Paid Marketing"></PageTitle>
+      <h2>Hello world</h2>
+    </div>
+  );
 };
 
 export default PaidMarketing;

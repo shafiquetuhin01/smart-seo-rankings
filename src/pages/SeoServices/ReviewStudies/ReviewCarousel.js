@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const ReviewCarousel = () => {
   return (
     <>
-      <div className="review-carousel lg:py-10 py-2">
+      <div className="hidden lg:block review-carousel lg:py-10 py-2">
         <Swiper
           navigation={true}
           modules={[Navigation]}
@@ -156,10 +156,10 @@ const ReviewCarousel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="pt-6 py-10" style={{ backgroundColor: "#F0F0F0" }}>
+            <div className="pt-6 py-1 lg:py-10" style={{ backgroundColor: "#F0F0F0" }}>
               <div className="block">
                 <img
-                  className="mx-auto py-6"
+                  className="mx-auto py-2 lg:py-6"
                   src="https://i.ibb.co/8bmw1T0/lice-troopers-transparent.webp"
                   alt=""
                 />
@@ -293,7 +293,7 @@ const ReviewCarousel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="pt-6 py-10" style={{ backgroundColor: "#F0F0F0" }}>
+            <div className="pt-6 py-2 lg:py-10" style={{ backgroundColor: "#F0F0F0" }}>
               <div className="block">
                 <img
                   className="mx-auto py-6"
@@ -432,7 +432,7 @@ const ReviewCarousel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="pt-6 py-10" style={{ backgroundColor: "#F0F0F0" }}>
+            <div className="pt-6 py-2 lg:py-10" style={{ backgroundColor: "#F0F0F0" }}>
               <div className="block">
                 <img
                   className="mx-auto py-6"
@@ -577,7 +577,7 @@ const ReviewCarousel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="pt-6 py-10" style={{ backgroundColor: "#F0F0F0" }}>
+            <div className="pt-6 py-2 lg:py-10" style={{ backgroundColor: "#F0F0F0" }}>
               <div className="block">
                 <img
                   className="mx-auto py-6"
@@ -720,7 +720,7 @@ const ReviewCarousel = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="pt-6 py-10" style={{ backgroundColor: "#F0F0F0" }}>
+            <div className="pt-6 py-2 lg:py-10" style={{ backgroundColor: "#F0F0F0" }}>
               <div className="block">
                 <img
                   className="mx-auto py-6"

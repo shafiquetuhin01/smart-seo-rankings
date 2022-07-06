@@ -11,7 +11,7 @@ const DashboardCallUs = () => {
           855-444-4777
         </Link>
       </p>
-      <div className="text-center flex justify-center">
+      <div className="text-center lg:flex justify-center">
         <button className="btn btn-accent text-white mr-4">
           start a live chat
         </button>

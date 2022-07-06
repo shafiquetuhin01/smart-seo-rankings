@@ -5,9 +5,9 @@ import SeoCallUs from "./SeoCallUs";
 const OnPageSeo = () => {
   return (
     <div className="onpage-bg">
-      <div className="mx-16">
-        <div className="mx-20 py-10">
-          <h2 className="text-4xl text-center text-accent font-bold">
+      <div className="mx-2 lg:mx-16">
+        <div className="mx-2lg:mx-20 py-10">
+          <h2 className="text-3xl lg:text-4xl text-center text-accent font-bold">
             Quantifiable, Google Compliant{" "}
             <span className="text-secondary">On-Page SEO</span> &{" "}
             <span className="text-secondary">Off-Page SEO</span> Services That

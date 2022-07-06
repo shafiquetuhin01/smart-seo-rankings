@@ -24,7 +24,7 @@ const SeoHero = () => {
           <div className="mx-2">
               <div className="flex items-center">
                   <img src="https://i.ibb.co/fkCx4vw/cal.webp" alt="" />
-                  <span className="text-5xl italic font-bold text-red-600">30 Days!</span>
+                  <span className="text-3xl lg:text-5xl italic font-bold text-red-600">30 Days!</span>
               </div>
           </div>
           <div className=" w-1/4">
@@ -32,7 +32,7 @@ const SeoHero = () => {
               <p className="hr-color-2nd mt-2"></p></div>
         </div>
         <div className="flex mt-3 mr-5 items-center justify-center">
-            <p className="italic text-4xl font-bold">Starting from</p>
+            <p className="italic text-2xl lg:text-4xl font-bold">Starting from</p>
             <div className="mx-2">
                 <img src="https://i.ibb.co/dfM2CgB/arrow.webp" alt="" />
             </div>
@@ -46,7 +46,7 @@ const SeoHero = () => {
           </div>
           <div>
             <div>
-              <h2 className="text-5xl font-bold">855-444-4777</h2>
+              <h2 className="text-3xl lg:text-5xl font-bold">855-444-4777</h2>
             </div>
             <div className="flex items-center justify-center">
               <Link to='/chatBox' ><button className="text-1xl btn-primary p-3 font-bold">Start A Live Chat</button></Link>
@@ -55,7 +55,7 @@ const SeoHero = () => {
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-3/12 request-form-sm mt-10 lg:mt-2">
+      <div className="w-full lg:w-3/12 request-form-sm mt-10 lg:mt-2 mb-3">
         <RequestForm />
       </div>
     </div>

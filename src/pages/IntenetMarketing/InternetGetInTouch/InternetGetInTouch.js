@@ -55,7 +55,7 @@ const InternetGetInTouch = () => {
             name="free-seo"
             id="free"
           >
-            <option value="Digital Marketing" selected="selected">
+            <option value="Digital Marketing" select="select">
               Digital Marketing
             </option>
             <option value="SEO">SEO</option>

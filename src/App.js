@@ -8,7 +8,7 @@ import WebDesignAndDev from "./pages/WebDesignAndDev/WebDesignAndDev";
 import NavbarTop from "./components/NavbarTop";
 import Navbar from "./components/Navbar";
 import InternetMarketing from "./pages/IntenetMarketing/InternetMarketing";
-import GoogleAdsMarketing from "./subPages1/GoogleAdsMarketing";
+import GoogleAdsMarketing from "./subPages1/GoogleAdsMarketing/GoogleAdsMarketing";
 import FacebookAdvertising from "./subPages1/FacebookAdvertising";
 import InstagramMarketing from "./subPages1/InstagramMarketing";
 import YoutubeAdvertising from "./subPages1/YoutubeAdvertising";

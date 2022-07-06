@@ -281,9 +281,9 @@ const ImgChanger = () => {
   ];
 
   const sliderRef = useRef(null);
-  useEffect(() => {
-    console.log(sliderRef.current);
-  }, []);
+  // useEffect(() => {
+  //   console.log(sliderRef.current);
+  // }, []);
   return (
     <div className="hidden lg:block w-90">
       <div className="mx-auto w-11/12">

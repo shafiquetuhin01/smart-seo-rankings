@@ -17,7 +17,7 @@ const DataDriven = () => {
                 <ReactPlayer className='' height={350} width={400} controls url="https://youtu.be/nkZAm413MdA" />
             </div>
             
-            <div className="w-8/12">
+            <div className="w-full lg:w-8/12">
               <h3 className="text-xl font-bold justify">
                 SEO’s importance in a digital-first world is indisputable.
                 According to Ahrefs, it helps businesses (regardless of their

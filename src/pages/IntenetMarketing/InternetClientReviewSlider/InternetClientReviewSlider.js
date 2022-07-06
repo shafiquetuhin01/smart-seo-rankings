@@ -7,7 +7,6 @@ import { useEffect } from "react";
 import { FaAngleUp, FaAngleDown, FaStar } from "react-icons/fa";
 import "./InternetClientReviewSlider.css";
 const InternetClientReviewSlider = () => {
-  const [action, setAction] = useState(false);
   const firstItem = (
     <>
       <div className="flex ml-5">
@@ -498,9 +497,9 @@ const InternetClientReviewSlider = () => {
   );
 
   const sliderRef = useRef(null);
-  useEffect(() => {
-    console.log(sliderRef.current);
-  }, []);
+  // useEffect(() => {
+  //   console.log(sliderRef.current);
+  // }, []);
   const [items, setItems] = useState(firstItem);
   const [newItems, setNewItems] = useState(items);
   const changeNewItems = (newItems) => {
