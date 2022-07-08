@@ -1,49 +1,143 @@
-ul li{
+nav{
+  background: #091D3F;
+}
+nav::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+nav ul{
+  float: right;
+  list-style: none;
+  /* margin-right: 40px; */
+  position: relative;
+}
+
+nav ul li{
+  display: inline-block;
+  /* margin: 0 10px; */
   border-left: 1px solid white;
+}
 
-}
-ul li:hover{
-  background-color: #1D75CC;
-
-}
-ul li a{
-  padding: 0;
-}
-ul li ul li{
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-}
-ul li ul li:hover{
-  background-color: #F2701D;
-
-}
-.navbar{
-  min-height: 2rem !important;
-}
-nav ul ul{
-  position: absolute;
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 18px;
+  padding: 8px 25px;
   
+}
+
+nav ul li:hover{
+  background: #1D75CC;
+}
+
+nav ul ul{
+  background: #1D75CC;
+  position: absolute;
+  top: 50px;
   opacity: 0;
   visibility: hidden;
   transition: top .3s;
 }
+nav ul ul li:hover{
+  background: #F37F34;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+
+nav ul li:hover>ul{
+  opacity: 1;
+  visibility: visible;
+}
 nav ul ul li{
   position: relative;
   margin: 0;
-  
+  width: 250px;
   float: none;
   display: list-item;
-  border-bottom: 1px solid rgba(0,0,0,0.3);;
+  border-top: 1px solid white;
+}
+nav ul ul a{
+  padding-left: 40px;
+}
+
+.show, .icon, input{
+  display: none;
 }
 .icon{
-  background-color: #091D3F;
+  background-color: #091f44;
+  padding: 3px;
+}
+input{
+  display: block;
+}
+.input-box{
+  display: none;
 }
 .show, .icon{
   display: none;
 }
 @media all and (max-width:1023px) {
-  .my-nav{
-    display: none;
+  nav ul li a{
+    padding: 8px 0;
   }
-} 
+  
+  nav ul{
+    margin-right: 0;
+    float: left;
+    min-width: 100%;
+   }
+   nav ul ul li{
+    border-top: none;
+   }
+   nav ul li, nav ul ul li{
+    display: inline-block;
+    min-width: 100%;
+    border-bottom: 1px solid white;
+    padding-left: 15px;
+    background: #091f44;
+   }
+   nav ul li, nav ul ul li:hover{
+    background: #091f44;
+   }
+ .show + a, ul{
+  display: none;
+ }
+ [id^=btn]:checked + ul {
+  display: block;
+ }
+ nav ul ul{
+  position: static;
+  top: 70px;
+  border-top: none;
+  float: none;
+  display: none;
+  opacity: 1;
+  visibility: visible;
+ }
+ nav ul li{
+  
+  border-left: none;
+}
+ .show{
+  display: block;
+  color: white;
+  font-size: 18px;
+  /* padding: 0 20px; */
+  line-height: 50px;
+  cursor: pointer;
+ }
+ 
+  .icon{
+  display: block;
+  color: white;
+  position: absolute;
+  /* right: 40px; */
+  line-height: 50px;
+  font-size: 25px;
+  cursor: pointer;
+ }
+
+}
