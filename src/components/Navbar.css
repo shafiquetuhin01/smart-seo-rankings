@@ -21,3 +21,29 @@ ul li ul li:hover{
 .navbar{
   min-height: 2rem !important;
 }
+nav ul ul{
+  position: absolute;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0;
+  
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);;
+}
+.icon{
+  background-color: #091D3F;
+}
+.show, .icon{
+  display: none;
+}
+@media all and (max-width:1023px) {
+  .my-nav{
+    display: none;
+  }
+} 
