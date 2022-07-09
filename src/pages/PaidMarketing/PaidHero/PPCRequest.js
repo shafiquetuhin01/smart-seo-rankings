@@ -1,12 +1,12 @@
 import React from "react";
-import "./RequestForm.css";
-const RequestForm = () => {
+
+const PPCRequest = () => {
   return (
     <div className="request-form request-bg card w-80 bg-neutral text-neutral-content">
       <div className="card-body items-center text-center">
-        <h2 className="card-title text-white italic">Request a Quote and !</h2>
+        <h2 className="card-title text-white italic">Request a Quote and</h2>
         <h2 className="card-title text-xl text-warning italic">
-          FREE SEO Audit Report
+          FREE PPC Audit Report
         </h2>
         <input
           type="text"
@@ -32,10 +32,12 @@ const RequestForm = () => {
           className="w-full h-9 rounded p-2"
           placeholder="Website"
         />
-        <select name="seo" id="" className="text-[#2b2a2a] w-full h-9 rounded p-2"
+        <select name="PPCRequest" id="" className="text-[#2b2a2a] w-full h-9 rounded p-2"
           placeholder="SEO">
           <option value="SEO">SEO</option>
-          <option value="PPC Marketing">PPC Marketing</option>
+          <option value="PPC Marketing" selected="selected">
+            PPC Marketing
+          </option>
           <option value="Social Media Management">
             Social Media Management
           </option>
@@ -70,4 +72,4 @@ const RequestForm = () => {
   );
 };
 
-export default RequestForm;
+export default PPCRequest;

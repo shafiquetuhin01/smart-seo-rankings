@@ -48,7 +48,7 @@ const App = () => {
           path="/internet-marketing"
           element={<InternetMarketing />}
         ></Route>
-        <Route path="/paid-marketing" element={<PaidMarketing />}></Route>
+        <Route path="/ppc-marketing" element={<PaidMarketing />}></Route>
         <Route path="/content-marketing" element={<ContentMarketing />}></Route>
         <Route path="/web-design" element={<WebDesignAndDev/>}></Route>
         <Route
