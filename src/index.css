@@ -24,6 +24,11 @@ code {
   li {
     @apply leading-7;
   }
+  p{
+    @apply text-white;
+    @apply text-[16px];
+
+  }
  h5 {
     @apply text-4xl;
     @apply text-secondary;
