@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 const PPCStrategy = () => {
   return (
     <div className="bg-accent">
@@ -52,7 +53,7 @@ const PPCStrategy = () => {
           </div>
         </div>
         <div>
-          <div className="lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 pt-10 py-5 w-10/12 mx-auto">
+          <div className="stretagy-pstretagy-p lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 pt-10 py-5 w-11/12 mx-auto">
             <div className="">
               <div className="flex justify-start items-center ">
                 <img src="https://i.ibb.co/N9fpMQz/ppc-icon1.webp" alt="" />
@@ -60,7 +61,7 @@ const PPCStrategy = () => {
                   Search Ads
                 </h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Create brand awareness and drive more sales and leads to your
                 website with text or call ads that show on search results of
                 Google, Bing, and more.
@@ -73,7 +74,7 @@ const PPCStrategy = () => {
                   Display Ads
                 </h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Build brand awareness and get more sales with visually appealing
                 text, image or video ads across the web, on websites, mobile
                 sites and apps.
@@ -86,7 +87,7 @@ const PPCStrategy = () => {
                   Facebook Ads
                 </h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Create Facebook ads for brand awareness and leads by diverting
                 potential Facebook users to your website. Target relevant
                 audience based on their location, demographic, and profile
@@ -100,7 +101,7 @@ const PPCStrategy = () => {
                   Re-marketing
                 </h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Don’t lose your website’s past visitors. Remind them about your
                 products/services by remarketing banner ads that will appear to
                 them while browsing the web.
@@ -111,7 +112,7 @@ const PPCStrategy = () => {
                 <img src="https://i.ibb.co/vXV6X38/ppc-icon5.webp" alt="" />
                 <h3 className="text-white text-xl font-bold ml-2">Gmail Ads</h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Spread your brand awareness and increase sales and leads by
                 advertising on Gmail. These ads show up in Gmail users' inbox
                 with text, images, videos or forms.
@@ -122,7 +123,7 @@ const PPCStrategy = () => {
                 <img src="https://i.ibb.co/dQdwdNy/ppc-icon6.webp" alt="" />
                 <h3 className="text-white text-xl font-bold ml-2">Video Ads</h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Raise awareness of your brand and get sales with video ad
                 formats by showing ads in the YouTube search results or before,
                 during, and after videos on YouTube and other display networks.
@@ -135,7 +136,7 @@ const PPCStrategy = () => {
                   App promotion
                 </h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Get more installs and interactions for your app. App promotion
                 makes it easy to promote your iOS or Android app.
               </p>
@@ -147,7 +148,7 @@ const PPCStrategy = () => {
                   App promotion
                 </h3>
               </div>
-              <p className="mt-2">
+              <p className="mt-2 text-white">
                 Get more installs and interactions for your app. App promotion
                 makes it easy to promote your iOS or Android app.
               </p>

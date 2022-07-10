@@ -5,10 +5,14 @@
     line-height: 15px;
 }
 .slick-current{
-    background-color: #0E2E67;
+    /* background-color: #0E2E67; */
     color: white;
     border: none;
     border-radius: 10px ;
+}
+.slick-arrow .slick-prev{
+    background-color: red;
+    padding: 20px;
 }
 .slick-current:hover{
     border: none;
