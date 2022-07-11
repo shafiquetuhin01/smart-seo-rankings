@@ -184,14 +184,15 @@ const PaidCarousel = () => {
     },
   ];
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: true,
     cssEase: "linear"
+    
   };
   return (
     <div className="py-3">
