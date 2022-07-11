@@ -27,7 +27,7 @@ const Navbar = () => {
           )}
         </label>
         <input className="input-box" type="checkbox" id="btn" />
-        <ul className="z-10 lg:w-full lg:text-center">
+        <ul className="z-10 lg:w-full lg:text-left text-center">
           <li className="border-l-[0]">
             <Link to="/internet-marketing">
               <Icons.FaHome className="inline text-4xl text-white mr-2 " />
