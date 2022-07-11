@@ -1,10 +1,13 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
+import ContentHero from './ContentHero/ContentHero';
 
 const ContentMarketing = () => {
     return (
-        <div>
-            <h2>This is ContentMarketing page</h2>
-        </div>
+        <>
+            <PageTitle title="Content Marketing Services"/>
+            <ContentHero/>
+        </>
     );
 };
 
