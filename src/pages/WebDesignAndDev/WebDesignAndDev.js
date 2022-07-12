@@ -1,10 +1,13 @@
 import React from 'react';
+import PageTitle from '../../components/PageTitle/PageTitle';
+import WebDesignHero from './WebDesignHero';
 
 const WebDesignAndDev = () => {
     return (
-        <div>
-            <h2>This is webdesign and development page</h2>
-        </div>
+        <>
+            <PageTitle title="Web Design & Development Services"/>
+            <WebDesignHero/>
+        </>
     );
 };
 

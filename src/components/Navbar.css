@@ -46,6 +46,13 @@ nav ul ul li:hover{
 nav ul ul li a{
   line-height: 50px;
 }
+nav ul li, nav ul ul li{
+  text-align: left;
+}
+nav ul ul li a{
+  text-align: left;
+  padding: 0 10px;
+}
 
 nav ul li:hover>ul{
   opacity: 1;
