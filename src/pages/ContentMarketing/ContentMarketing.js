@@ -6,6 +6,7 @@ import ClientPortfolio from "../SeoServices/ClientPortfolio/ClientPortfolio";
 import ReviewWidget from "../SeoServices/ClientTestimonial/ReviewWidget";
 import TestimonialCarousel from "../SeoServices/ClientTestimonial/TestimonialCarousel";
 import ContentCheckOut from "./ContentCheckOut";
+import ContentExperience from "./ContentExperience/ContentExperience";
 import ContentAward from "./ContentHero/ContentAward";
 import ContentHero from "./ContentHero/ContentHero";
 import OurContent from "./ContentHero/OurContent";
@@ -27,6 +28,7 @@ const ContentMarketing = () => {
       <ClientFeatured />
       <ContentCheckOut/>
       <ContentTraffic/>
+      <ContentExperience/>
     </>
   );
 };
