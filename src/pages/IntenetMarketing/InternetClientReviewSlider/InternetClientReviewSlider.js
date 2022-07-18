@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from "react";
-import { useEffect } from "react";
 import { FaAngleUp, FaAngleDown, FaStar } from "react-icons/fa";
 import "./InternetClientReviewSlider.css";
 const InternetClientReviewSlider = () => {
@@ -501,7 +500,7 @@ const InternetClientReviewSlider = () => {
   //   console.log(sliderRef.current);
   // }, []);
   const [items, setItems] = useState(firstItem);
-  const [newItems, setNewItems] = useState(items);
+  const [ setNewItems] = useState(items);
   const changeNewItems = (newItems) => {
     setNewItems(newItems);
   };

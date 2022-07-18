@@ -10,14 +10,32 @@
     border: none;
     border-radius: 10px ;
 }
-.slick-arrow .slick-prev{
-    background-color: red;
-    padding: 20px;
-}
+.slick-prev:before {
+    content: "<i className="fa fa-bas"></i>";
+    color: white;
+    
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: "<i className="fa fa-bas"></i>";
+    color: white;
+    font-size: 30px;
+  }
+.slick-prev {
+    left: 3% !important;
+    z-index: 1;
+    width:30px;  
+  }
+.slick-next {
+    right: 3% !important;
+    z-index: 1;
+    width:30px;   
+  }
 .slick-current:hover{
     border: none;
     color: #0E2E67;
-    background-color: #0E2E67;
+    /* background-color: #0E2E67; */
 }
 
 .slick-current h6{

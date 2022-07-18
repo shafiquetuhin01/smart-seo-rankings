@@ -1,6 +1,4 @@
 import React from "react";
-import MyForm from "../IntenetMarketing/InternetGetInTouch/MyForm";
-
 import WebDesignAwards from "./WebDesignAwards";
 import WebDesignForm from "./WebDesignForm";
 
@@ -29,7 +27,7 @@ const WebDesignHero = () => {
             <div className="mx-2">
               <img src="https://i.ibb.co/dfM2CgB/arrow.webp" alt="" />
             </div>
-            <div className="bg-secondary text-white p-2 price-start">
+            <div className="bg-secondary text-white p-2 price-start border-4 border-white">
               <p className="text-5xl font-bold">
                 $299<sup>*</sup>
               </p>

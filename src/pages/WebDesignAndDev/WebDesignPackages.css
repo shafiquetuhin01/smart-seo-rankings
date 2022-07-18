@@ -1,0 +1,19 @@
+.for-li li::before{
+    content: "";
+    padding-left: 20px;
+    border-left: 4px solid rgb(218, 151, 8);
+}
+.for-li li::before:hover{
+    color: #0a2044;
+}
+.web-overflow::-webkit-scrollbar{
+    width: 8px;
+    background-color: #0a2044;
+    border-radius: 30px;
+}
+
+.web-overflow::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+    background-color: #ff6000;
+}
