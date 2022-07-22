@@ -9,7 +9,6 @@ import NavbarTop from "./components/NavbarTop";
 import Navbar from "./components/Navbar";
 import InternetMarketing from "./pages/IntenetMarketing/InternetMarketing";
 import GoogleAdsMarketing from "./subPages1/GoogleAdsMarketing/GoogleAdsMarketing";
-import FacebookAdvertising from "./subPages1/FacebookAdvertising";
 import InstagramMarketing from "./subPages1/InstagramMarketing";
 import YoutubeAdvertising from "./subPages1/YoutubeAdvertising";
 import TwitterMarketing from "./subPages1/TwitterMarketing";
@@ -35,13 +34,15 @@ import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
 import Request from "./pages/Request/Request";
 import Footer from "./components/Footer/Footer";
-
+import FacebookAdvertising from "./subPages1/FaceBookAdvertising/FacebookAdvertising";
 const App = () => {
   return (
     <>
+
       <NavbarTop />
       <Navbar />
       <Routes>
+        
         <Route path="/seo-services" element={<SeoServices />}></Route>
         <Route path="/" element={<SeoServices />}></Route>
         <Route
@@ -117,8 +118,10 @@ const App = () => {
           path="*"
           element={<NotFound />}
         ></Route>
+        
       </Routes>
       <Footer />
+      
     </>
   );
 };
