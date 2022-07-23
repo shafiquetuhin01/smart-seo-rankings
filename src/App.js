@@ -9,7 +9,7 @@ import NavbarTop from "./components/NavbarTop";
 import Navbar from "./components/Navbar";
 import InternetMarketing from "./pages/IntenetMarketing/InternetMarketing";
 import GoogleAdsMarketing from "./subPages1/GoogleAdsMarketing/GoogleAdsMarketing";
-import InstagramMarketing from "./subPages1/InstagramMarketing";
+import InstagramMarketing from "./subPages1/InstagramMarketing/InstagramMarketing";
 import YoutubeAdvertising from "./subPages1/YoutubeAdvertising";
 import TwitterMarketing from "./subPages1/TwitterMarketing";
 import LinkedinMarketing from "./subPages1/LinkedinMarketing";
