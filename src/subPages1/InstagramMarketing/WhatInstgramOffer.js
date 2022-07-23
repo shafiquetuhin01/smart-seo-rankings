@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const WhatInstgramOffer = () => {
     return (
-        <div className="w-11/12 mx-auto my-3 py-1 lg:py-5 bg-[#F3F3F3]">
+        <section className="w-11/12 mx-auto my-3 py-1 lg:py-5 bg-[#F3F3F3]">
         <h3 className="my-5 text-4xl font-bold text-center text-info">
           Our What <span className="text-secondary">Instagram Marketing </span> Services do we offer?
         </h3>
@@ -225,7 +225,7 @@ const WhatInstgramOffer = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     );
 };
 

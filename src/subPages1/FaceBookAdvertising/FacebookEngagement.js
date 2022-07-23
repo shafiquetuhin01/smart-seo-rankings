@@ -2,7 +2,7 @@ import React from "react";
 
 const FacebookEngagement = () => {
   return (
-    <div
+    <section
       style={{
         backgroundImage: 'url("https://i.ibb.co/3532K5x/fb-advertising-bg.webp")',
       }}
@@ -39,7 +39,7 @@ const FacebookEngagement = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

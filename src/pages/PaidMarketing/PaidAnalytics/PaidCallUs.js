@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 const PaidCallUs = () => {
   return (
-    <div className="bg-info py-3 text-white">
+    <section className="bg-info py-3 text-white">
         <div className="mx-20 mt-6 pb-10">
       
       <p className="text-3xl mt-2 mb-8 text-white text-center italic font-bold">
@@ -21,7 +21,7 @@ const PaidCallUs = () => {
         </button>
       </div>
     </div>
-    </div>
+    </section>
   );
 };
 
