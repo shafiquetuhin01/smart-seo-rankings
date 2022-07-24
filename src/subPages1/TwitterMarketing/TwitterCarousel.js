@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { useRef } from "react";
+import TwitterCallUs from "./TwitterCallUs";
 
 const TwitterCarousel = () => {
   const sliderRef = useRef(null);
@@ -207,7 +208,9 @@ const TwitterCarousel = () => {
             ))}
           </Slider>
         </div>
+        
       </div>
+      <TwitterCallUs/>
     </section>
   );
 };
