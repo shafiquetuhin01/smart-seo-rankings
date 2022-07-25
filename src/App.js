@@ -12,7 +12,7 @@ import GoogleAdsMarketing from "./subPages1/GoogleAdsMarketing/GoogleAdsMarketin
 import InstagramMarketing from "./subPages1/InstagramMarketing/InstagramMarketing";
 import YoutubeAdvertising from "./subPages1/YoutubeAdvertising/YoutubeAdvertising";
 import TwitterMarketing from "./subPages1/TwitterMarketing/TwitterMarketing";
-import LinkedinMarketing from "./subPages1/LinkedinMarketing";
+import LinkedinMarketing from "./subPages1/LinkedinMarketing/LinkedinMarketing";
 import PinterestMarketing from "./subPages1/PinterestMarketing";
 import AmazonMarketing from "./subPages1/AmazonMarketing";
 import SeoContentWriting from "./subPages2/SeoContentWriting";
