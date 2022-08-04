@@ -13,9 +13,9 @@ import InstagramMarketing from "./subPages1/InstagramMarketing/InstagramMarketin
 import YoutubeAdvertising from "./subPages1/YoutubeAdvertising/YoutubeAdvertising";
 import TwitterMarketing from "./subPages1/TwitterMarketing/TwitterMarketing";
 import LinkedinMarketing from "./subPages1/LinkedinMarketing/LinkedinMarketing";
-import PinterestMarketing from "./subPages1/PinterestMarketing";
-import AmazonMarketing from "./subPages1/AmazonMarketing";
-import SeoContentWriting from "./subPages2/SeoContentWriting";
+import PinterestMarketing from "./subPages1/PinterestMarketing/PinterestMarketing";
+import AmazonMarketing from "./subPages1/AmazonMarketing/AmazonMarketing";
+import SeoContentWriting from "./subPages2/SeoContentWriting/SeoContentWriting";
 import ArticleWriting from "./subPages2/ArticleWriting";
 import BlogWriting from "./subPages2/BlogWriting";
 import EmailMarketing from "./subPages2/EmailMarketing";

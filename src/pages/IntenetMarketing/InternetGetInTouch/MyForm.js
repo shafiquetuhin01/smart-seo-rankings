@@ -108,7 +108,7 @@ const MyForm = () => {
                 Video Design Services
               </option>
               <option className="text-[#a1a0a0]" value="Guest Blogging">Guest Blogging</option>
-              <option className="text-[#a1a0a0]" value="Digital Marketing" select="true">
+              <option className="text-[#a1a0a0]" value="Digital Marketing" selected="true">
              Digital Marketing
               </option>
               <option className="text-[#a1a0a0]" value="Other">Other</option>

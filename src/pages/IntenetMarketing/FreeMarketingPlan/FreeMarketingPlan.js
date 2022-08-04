@@ -49,7 +49,7 @@ const FreeMarketingPlan = () => {
           name="free-seo"
           id="free"
         >
-          <option value="Digital Marketing" select="select">
+          <option value="Digital Marketing" selected="selected">
             Digital Marketing
           </option>
           <option value="SEO">SEO</option>

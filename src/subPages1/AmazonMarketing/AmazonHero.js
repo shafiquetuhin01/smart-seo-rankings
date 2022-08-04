@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const LinkedinHero = () => {
+
+const AmazonHero = () => {
   return (
     <section
       style={{ backgroundImage: 'url("https://i.ibb.co/LCJyGq5/1.webp")' }}
@@ -9,10 +10,10 @@ const LinkedinHero = () => {
       <div className="lg:flex gap-5 justify-center items-center w-11/12 mx-auto pt-8 py-5 ">
         <div className="w-full lg:w-7/12">
           <h2 className="text-3xl pt-3 lg:text-[46px] lg:leading-[51px] font-bold text-secondary text-left">
-            LinkedIn Marketing:{" "}
+            Amazon Marketing:{" "}
             <span className="text-white">
               {" "}
-              LinkedIn Marketing: Leveraging The Biggest B2B Platform To
+              Amazon Marketing: Leveraging The Biggest B2B Platform To
               Increase Sales
             </span>
           </h2>
@@ -67,4 +68,4 @@ const LinkedinHero = () => {
   );
 };
 
-export default LinkedinHero;
+export default AmazonHero;
