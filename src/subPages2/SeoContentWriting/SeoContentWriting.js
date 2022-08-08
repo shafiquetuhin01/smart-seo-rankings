@@ -1,7 +1,10 @@
 import React from 'react';
 import PageTitle from '../../components/PageTitle/PageTitle';
+import CustomSeoContent from './CustomSeoContent';
 import SeoContentHero from './SeoContentHero';
+import SeoContentOr from './SeoContentOr';
 import SeoFeaturedContent from './SeoFeaturedContent';
+import SeoPriceContent from './SeoPriceContent';
 import SeoProblemTogether from './SeoProblemTogether';
 import WhatClientSay from './WhatClientSay';
 import WhySmartSeo from './WhySmartSeo';
@@ -15,6 +18,9 @@ const SeoContentWriting = () => {
             <WhySmartSeo/>
             <SeoProblemTogether/>
             <SeoFeaturedContent/>
+            <SeoPriceContent/>
+            <SeoContentOr/>
+            <CustomSeoContent/>
         </section>
     );
 };

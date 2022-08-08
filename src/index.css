@@ -21,6 +21,104 @@ code {
   border-radius: 100px;
 }
 
+
+.seo-content-price input[type=range]{
+  -webkit-appearance: none;
+}
+
+.seo-content-price input[type=range]::-webkit-slider-runnable-track {
+  height: .95em;
+  background: rgb(204, 201, 201);
+  border: none;
+  border-radius: 3px;
+}
+
+.seo-content-price input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 50%;
+  background: #F38135;
+  margin-top: -4px;
+}
+.seo-content-price input[type=range]::-webkit-slider-thumb:hover {
+  background: #f13d06;
+}
+
+.seo-content-price input[type=range]:focus {
+  outline: none;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f13d06;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #f13d06;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(30px);
+  -ms-transform: translateX(30px);
+  transform: translateX(30px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#select-category {
+  font-size: 100%;
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='salmon' height='34' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 5px;
+}
 @layer base {
   li {
     @apply leading-7;
