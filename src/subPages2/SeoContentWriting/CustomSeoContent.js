@@ -1,5 +1,6 @@
 import React from 'react';
 import SeoContentPrice from './SeoContentPrice';
+import SeoContentPriceSummary from './SeoContentPriceSummary';
 
 const CustomSeoContent = () => {
     return (
@@ -12,7 +13,9 @@ const CustomSeoContent = () => {
                 <div className='w-7/12 mx-auto'>
                     <SeoContentPrice/>
                 </div>
-                <div className='w-5/12 mx-auto'></div>
+                <div className='w-5/12 mx-auto'>
+                    <SeoContentPriceSummary/>
+                </div>
             </div>
         </section>
     );

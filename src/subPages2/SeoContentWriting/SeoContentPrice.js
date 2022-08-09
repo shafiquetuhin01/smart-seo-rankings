@@ -51,7 +51,7 @@ const SeoContentPrice = () => {
           <p className="inline float-right text-info font-bold">4000</p>
         </div>
       </div>
-      <div className="mt-5 border-b border-gray-300 pb-6 form-control">
+      <div className="mt-5 form-control pb-3">
         <div className="border-b border-gray-300 pb-2 seo-content-price flex justify-between items-center font-bold">
           <p>Turnaround Time :</p>
           <p className="w-8/12 bg-[#EAEAEA] text-center p-2">
