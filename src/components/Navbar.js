@@ -100,7 +100,7 @@ const Navbar = () => {
                 <Link to="/email-marketing">Email Marketing</Link>
               </li>
               <li>
-                <Link to="/guest-bloging">Guest Bloging</Link>
+                <Link to="/guest-blogging">Guest Blogging</Link>
               </li>
             </ul>
           </li>

@@ -16,19 +16,19 @@ import LinkedinMarketing from "./subPages1/LinkedinMarketing/LinkedinMarketing";
 import PinterestMarketing from "./subPages1/PinterestMarketing/PinterestMarketing";
 import AmazonMarketing from "./subPages1/AmazonMarketing/AmazonMarketing";
 import SeoContentWriting from "./subPages2/SeoContentWriting/SeoContentWriting";
-import ArticleWriting from "./subPages2/ArticleWriting";
-import BlogWriting from "./subPages2/BlogWriting";
-import EmailMarketing from "./subPages2/EmailMarketing";
-import GuestBlogging from "./subPages2/GuestBlogging";
-import WebDesignPackages from "./subPages3/WebDesignPackages";
-import B2BWebDesign from "./subPages3/B2BWebDesign";
-import B2CWebDesign from "./subPages3/B2CWebDesign";
-import EcommerceWebDesign from "./subPages3/EcommerceWebDesign";
-import WordPressWebDesign from "./subPages3/WordPressWebDesign";
-import ResponsiveWebDesign from "./subPages3/ResponsiveWebDesign";
-import LandingPageDesign from "./subPages3/LandingPageDesign";
-import WebsiteMaintenance from "./subPages3/WebsiteMaintenance";
-import WebsiteOptimization from "./subPages3/WebsiteOptimization";
+import ArticleWriting from "./subPages2/ArticleWriting/ArticleWriting";
+import BlogWriting from "./subPages2/BlogWriting/BlogWriting";
+import EmailMarketing from "./subPages2/EmailMarketing/EmailMarketing";
+import GuestBlogging from "./subPages2/GuestBlogging/GuestBlogging";
+import WebDesignPackages from "./subPages3/WebDesignPackages/WebDesignPackages";
+import B2BWebDesign from "./subPages3/B2BWebDesign/B2BWebDesign";
+import B2CWebDesign from "./subPages3/B2CWebDesign/B2CWebDesign";
+import EcommerceWebDesign from "./subPages3/EcommerceWebDesign/EcommerceWebDesign";
+import WordPressWebDesign from "./subPages3/WordPressWebDesign/WordPressWebDesign";
+import ResponsiveWebDesign from "./subPages3/ResponsiveWebDesign/ResponsiveWebDesign";
+import LandingPageDesign from "./subPages3/LandingPageDesign/LandingPageDesign";
+import WebsiteMaintenance from "./subPages3/WebsiteMaintenance/WebsiteMaintenance";
+import WebsiteOptimization from "./subPages3/WebsiteOptimization/WebsiteOptimization";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Login from "./pages/Login/Login";
 import NotFound from "./pages/NotFound/NotFound";
@@ -82,7 +82,7 @@ const App = () => {
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/email-marketing" element={<EmailMarketing />}></Route>
-        <Route path="/guest-marketing" element={<GuestBlogging />}></Route>
+        <Route path="/guest-blogging" element={<GuestBlogging />}></Route>
         <Route
           path="/web-design-packages"
           element={<WebDesignPackages />}

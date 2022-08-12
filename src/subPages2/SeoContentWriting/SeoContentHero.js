@@ -7,7 +7,6 @@ import {
   FaSyncAlt,
   FaFileAlt,
 } from "react-icons/fa";
-import RequestForm from "../../pages/SeoServices/SeoHero/RequestForm";
 import ContentForm from "./ContentForm";
 
 const SeoContentHero = () => {
