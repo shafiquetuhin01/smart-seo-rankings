@@ -1,6 +1,9 @@
+import { signOut } from "firebase/auth";
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
+import { useAuthState } from "react-firebase-hooks/auth";
+import { Link, useNavigate } from "react-router-dom";
+import auth from "../firebase.init";
+import {FaPhoneAlt} from 'react-icons/fa';
 const NavbarTop = () => {
   const navigate = useNavigate();
   const handleContact = () => {
@@ -9,6 +12,13 @@ const NavbarTop = () => {
   const handleLogin = () => {
     navigate("/login");
   };
+  const [user] = useAuthState(auth);
+
+  const handleSignOut = () => {
+    signOut(auth);
+    navigate("/login");
+  };
+  
   return (
     <div className="w-full bg-white border-y-4 border-t-[#0B467A] border-b-[#F47A1E]">
       <div
@@ -31,25 +41,12 @@ const NavbarTop = () => {
         <div className="grid justify-items-center items-center">
           <div className="grid grid-cols-1 sm:grid-cols-2">
             <div className="items-center flex">
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="inline h-10 w-10 text-secondary hover:text-success"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                  />
-                </svg>
-              </span>
-              <span className="text-3xl font-bold text-accent hover:text-secondary mx-1 hover">
+              <a href="tel:855-444-4777" className="text-primary text-2xl hover:text-secondary ">
+                <FaPhoneAlt className=""/>
+              </a>
+              <a href="tel:855-444-4777" className="text-3xl font-bold text-info mx-1 hover hover:text-secondary ">
                 855-444-4777
-              </span>
+              </a>
             </div>
             <div className="items-center flex">
               <button
@@ -58,12 +55,14 @@ const NavbarTop = () => {
               >
                 contact us
               </button>
-              <button
+              {user?<button className="py-1 px-3 text-white uppercase btn-secondary mx-2 font-bold" onClick={handleSignOut}>
+                Sign Out
+              </button>:<button
                 onClick={handleLogin}
                 className="p-1 uppercase btn-secondary font-bold text-white"
               >
                 client login
-              </button>
+              </button>}
             </div>
           </div>
         </div>

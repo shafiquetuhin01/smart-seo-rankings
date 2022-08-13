@@ -1,134 +1,72 @@
-import React from 'react';
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
-import auth from '../../firebase.init';
-import { useForm } from "react-hook-form";
-import Loading from '../Shared/Loading';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import useToken from '../../hooks/useToken';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const SignUp = () => {
-    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
-    const { register, formState: { errors }, handleSubmit } = useForm();
-    const [
-        createUserWithEmailAndPassword,
-        user,
-        loading,
-        error,
-    ] = useCreateUserWithEmailAndPassword(auth);
-
-    const [updateProfile, updating, updateError] = useUpdateProfile(auth);
-
-    const [token]  = useToken(user || gUser);
-
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
-    let signInError;
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth)
 
-    if (loading || gLoading || updating) {
-        return <Loading></Loading>
+    const handleEmailBlur = event =>{
+        setEmail(event.target.value);
     }
 
-    if (error || gError || updateError) {
-        signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
+    const handlePasswordBlur = event =>{
+        setPassword(event.target.value);
     }
 
-    if (token) {
-        navigate('/appointment');
+    const handleConfirmPasswordBlur = event =>{
+        setConfirmPassword(event.target.value);
     }
 
-    const onSubmit = async data => {
-        await createUserWithEmailAndPassword(data.email, data.password);
-        await updateProfile({ displayName: data.name });
-        console.log('update done');
+    if(user){
+        navigate('/');
     }
+
+    const handleCreateUser = event =>{
+        event.preventDefault();
+        if(password !== confirmPassword){
+            setError('Your two passwords did not match');
+            return;
+        }
+        if(password.length <6){
+            setError('Password must be 6 characters or longer');
+            return;
+        }
+        
+        createUserWithEmailAndPassword(email, password);
+    }
+
     return (
-        <div className='flex h-screen justify-center items-center'>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    <h2 className="text-center text-2xl font-bold">Sign Up</h2>
-                    <form onSubmit={handleSubmit(onSubmit)}>
-
-                        <div className="form-control w-full max-w-xs">
-                            <label className="label">
-                                <span className="label-text">Name</span>
-                            </label>
-                            <input
-                                type="text"
-                                placeholder="Your Name"
-                                className="input input-bordered w-full max-w-xs"
-                                {...register("name", {
-                                    required: {
-                                        value: true,
-                                        message: 'Name is Required'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
-                            </label>
-                        </div>
-
-                        <div className="form-control w-full max-w-xs">
-                            <label className="label">
-                                <span className="label-text">Email</span>
-                            </label>
-                            <input
-                                type="email"
-                                placeholder="Your Email"
-                                className="input input-bordered w-full max-w-xs"
-                                {...register("email", {
-                                    required: {
-                                        value: true,
-                                        message: 'Email is Required'
-                                    },
-                                    pattern: {
-                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
-                                        message: 'Provide a valid Email'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
-                            </label>
-                        </div>
-                        <div className="form-control w-full max-w-xs">
-                            <label className="label">
-                                <span className="label-text">Password</span>
-                            </label>
-                            <input
-                                type="password"
-                                placeholder="Password"
-                                className="input input-bordered w-full max-w-xs"
-                                {...register("password", {
-                                    required: {
-                                        value: true,
-                                        message: 'Password is Required'
-                                    },
-                                    minLength: {
-                                        value: 6,
-                                        message: 'Must be 6 characters or longer'
-                                    }
-                                })}
-                            />
-                            <label className="label">
-                                {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
-                                {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
-                            </label>
-                        </div>
-
-                        {signInError}
-                        <input className='btn w-full max-w-xs text-white' type="submit" value="Sign Up" />
-                    </form>
-                    <p><small>Already have an account? <Link className='text-primary' to="/login">Please login</Link></small></p>
-                    <div className="divider">OR</div>
-                    <button
-                        onClick={() => signInWithGoogle()}
-                        className="btn btn-outline"
-                    >Continue with Google</button>
-                </div>
+        <div className="my-10">
+            <div className="border border-gray-300 w-6/12 lg:w-4/12 mx-auto pt-3 rounded-md">
+                <h2 className="text-4xl text-info font-bold text-center mb-5">Sign Up</h2>
+                <form onSubmit={handleCreateUser}>
+                    <div >
+                        <label className="my-2 text-xl pl-3" htmlFor="email">Email</label>
+                        <input className="mt-2 w-full border border-gray-200 pl-3 py-1 outline-0 text-gray-400 text-xl" onBlur={handleEmailBlur} type="email" name="email" id="" required/>
+                    </div>
+                    <div className="mt-2">
+                        <label className="my-2 text-xl pl-3" htmlFor="password">Password</label>
+                        <input className="mt-2 w-full border border-gray-200 pl-3 py-1 outline-0 text-gray-400 text-xl" onBlur={handlePasswordBlur} type="password" name="password" id=""  required/>
+                    </div>
+                    <div className="mt-2">
+                        <label className="my-2 text-xl pl-3" htmlFor="confirm-password">Confirm Password</label>
+                        <input className="mt-2 w-full border border-gray-200 pl-3 py-1 outline-0 text-gray-400 text-xl" onBlur={handleConfirmPasswordBlur} type="password" name="confirm-password" id="" />
+                    </div>
+                    <p style={{color: 'red'}}>{error}</p>
+                    <input className="text-xl cursor-pointer text-center font-bold text-info py-2 fob bg-slate-200 block w-full px-0" type="submit" value="Sign Up"  required/>
+                </form>
+                <p className="my-3 text-xl">
+                    Already Have an account? <Link className="text-green-500" to="/login">Login</Link>
+                </p>
             </div>
-        </div >
+        </div>
     );
 };
 
