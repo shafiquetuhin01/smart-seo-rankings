@@ -13,6 +13,7 @@ const NavbarTop = () => {
     navigate("/login");
   };
   const [user] = useAuthState(auth);
+  console.log(user)
 
   const handleSignOut = () => {
     signOut(auth);
@@ -55,9 +56,12 @@ const NavbarTop = () => {
               >
                 contact us
               </button>
-              {user?<button className="py-1 px-3 text-white uppercase btn-secondary mx-2 font-bold" onClick={handleSignOut}>
-                Sign Out
-              </button>:<button
+              {user&&user?.displayName}
+              {user?
+              <button className="py-1 px-3 text-white uppercase btn-secondary mx-2 font-bold" onClick={handleSignOut}>
+               Sign Out
+              </button>
+              :<button
                 onClick={handleLogin}
                 className="p-1 uppercase btn-secondary font-bold text-white"
               >

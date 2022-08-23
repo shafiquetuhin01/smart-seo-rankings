@@ -1,90 +1,116 @@
-import React, { useState } from "react";
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
-import {
-  FacebookAuthProvider,
-  sendEmailVerification,
-  signInWithPopup,
-} from "firebase/auth";
-import { Link, useLocation, useNavigate } from "react-router-dom";
-import auth from "../../firebase.init";
-import { getAuth } from "firebase/auth";
+import React, { useEffect } from 'react';
+import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { useForm } from "react-hook-form";
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import Loading from '../../components/Loading';
+import useToken from '../../components/hooks/useToken';
+import {FcGoogle} from "react-icons/fc";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [signInWithEmailAndPassword, user, loading, error] =
-    useSignInWithEmailAndPassword(auth);
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
+    const { register, formState: { errors }, handleSubmit } = useForm();
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
 
-  const navigate = useNavigate();
-  const location = useLocation();
-  const from = location.state?.from?.pathname || "/";
+    const [token] = useToken(user || gUser);
 
-  const handleEmailBlur = (event) => {
-    setEmail(event.target.value);
-  };
+    let signInError;
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
 
-  const handlePasswordBlur = (event) => {
-    setPassword(event.target.value);
-  };
+    useEffect( () =>{
+        if (token) {
+            navigate(from, { replace: true });
+        }
+    }, [token, from, navigate])
 
-  if (user) {
-    navigate(from, { replace: true });
-  }
-  //fb sign in
-  const handleSignInWithFb = () => {
-    const provider = new FacebookAuthProvider();
-    const auth = getAuth();
-    signInWithPopup(auth, provider);
-  };
-  const handleUserSignIn = (event) => {
-    event.preventDefault();
-    signInWithEmailAndPassword(email, password);
-    sendEmailVerification();
-    alert("Email sent");
-  };
+    if (loading || gLoading) {
+        return <Loading></Loading>
+    }
 
-  return (
-    <div className="my-10">
-      <div className="border border-gray-300 w-6/12 lg:w-4/12 mx-auto pt-3 rounded-md">
-        <h2 className="text-4xl text-info font-bold text-center mb-5">Login</h2>
-        <form onSubmit={handleUserSignIn}>
-          <div className="">
-            <label className="my-2 text-xl pl-3" htmlFor="email">Email</label>
-            <input
-            className="mt-2 w-full border border-gray-200 pl-3 py-1 outline-0 text-gray-400 text-xl"
-              onBlur={handleEmailBlur}
-              type="email"
-              name="email"
-              id=""
-              placeholder="Write your email"
-              required
-            />
-          </div>
-          <div className="mt-2">
-            <label className="my-2 text-xl pl-3" htmlFor="password">Password</label>
-            <input
-            className="mt-2 w-full border border-gray-200 pl-3 py-1 outline-0 text-gray-400 text-xl"
-              onBlur={handlePasswordBlur}
-              type="password"
-              name="password"
-              id=""
-              placeholder="Write your password"
-              required
-            />
-          </div>
-          <p style={{ color: "red" }}>{error?.message}</p>
-          {loading && <p>Loading...</p>}
-          <input className="text-xl cursor-pointer text-center font-bold text-info py-2 fob bg-slate-200 block w-full px-0" type="submit" value="Login" />
-        </form>
-        <p className="my-3 text-xl">
-          New User?{" "}
-          <Link className="text-green-500" to="/signup">
-            Create an account
-          </Link>
-        </p>
-      </div>
-    </div>
-  );
+    if(error || gError){
+        signInError= <p className='text-red-500'><small>{error?.message || gError?.message }</small></p>
+    }
+
+    const onSubmit = data => {
+        signInWithEmailAndPassword(data.email, data.password);
+    }
+
+    return (
+        <div className='flex h-screen justify-center items-center'>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    <h2 className="text-center text-2xl font-bold">Login</h2>
+                    <form onSubmit={handleSubmit(onSubmit)}>
+
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Email</span>
+                            </label>
+                            <input
+                                type="email"
+                                placeholder="Your Email"
+                                className="input input-bordered w-full max-w-xs"
+                                {...register("email", {
+                                    required: {
+                                        value: true,
+                                        message: 'Email is Required'
+                                    },
+                                    pattern: {
+                                        value: /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/,
+                                        message: 'Provide a valid Email'
+                                    }
+                                })}
+                            />
+                            <label className="label">
+                                {errors.email?.type === 'required' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                                {errors.email?.type === 'pattern' && <span className="label-text-alt text-red-500">{errors.email.message}</span>}
+                            </label>
+                        </div>
+                        <div className="form-control w-full max-w-xs">
+                            <label className="label">
+                                <span className="label-text">Password</span>
+                            </label>
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                className="input input-bordered w-full max-w-xs"
+                                {...register("password", {
+                                    required: {
+                                        value: true,
+                                        message: 'Password is Required'
+                                    },
+                                    minLength: {
+                                        value: 6,
+                                        message: 'Must be 6 characters or longer'
+                                    }
+                                })}
+                            />
+                            <label className="label">
+                                {errors.password?.type === 'required' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                                {errors.password?.type === 'minLength' && <span className="label-text-alt text-red-500">{errors.password.message}</span>}
+                            </label>
+                        </div>
+
+                        {signInError}
+                        <input className='btn w-full max-w-xs text-white' type="submit" value="Login" />
+                    </form>
+                    <p><small>New to Smart SEO Rankings <Link className='text-primary' to="/signup">Create New Account</Link></small></p>
+                    <div className="divider">OR</div>
+                    <button
+                        onClick={() => signInWithGoogle()}
+                        className="btn btn-outline"
+                    ><FcGoogle className='mr-2'/> Continue with Google</button>
+                </div>
+            </div>
+        </div >
+    );
 };
 
 export default Login;
