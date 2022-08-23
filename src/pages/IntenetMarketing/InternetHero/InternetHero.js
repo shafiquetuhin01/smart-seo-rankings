@@ -23,6 +23,7 @@ const InternetHero = () => {
       <InternetAwards />
       <InternetMilestone />
     </section>
+    // This page used in several pages 
   );
 };
 
