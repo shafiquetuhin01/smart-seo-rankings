@@ -56,10 +56,10 @@ const NavbarTop = () => {
               >
                 contact us
               </button>
-              {user&&user?.displayName}
+              
               {user?
               <button className="py-1 px-3 text-white uppercase btn-secondary mx-2 font-bold" onClick={handleSignOut}>
-               Sign Out
+               {user&&user?.displayName}
               </button>
               :<button
                 onClick={handleLogin}

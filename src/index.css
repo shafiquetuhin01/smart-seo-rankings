@@ -29,10 +29,13 @@ code {
 .seo-content-price input[type=range]::-webkit-slider-runnable-track {
   height: .95em;
   background: rgb(204, 201, 201);
+  
   border: none;
   border-radius: 3px;
 }
-
+input,textarea{
+  color:black
+}
 .seo-content-price input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   border: none;

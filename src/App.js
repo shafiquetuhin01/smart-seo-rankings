@@ -36,6 +36,7 @@ import Request from "./pages/Request/Request";
 import Footer from "./components/Footer/Footer";
 import FacebookAdvertising from "./subPages1/FaceBookAdvertising/FacebookAdvertising";
 import SignUp from "./pages/Login/SignUp";
+import Thanks from "./pages/Thanks/Thanks";
 const App = () => {
   return (
     <>
@@ -82,7 +83,8 @@ const App = () => {
         <Route path="/blog-writing" element={<BlogWriting />}></Route>
         <Route path="/contact-us" element={<ContactUs />}></Route>
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<SignUp />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/thanks" element={<Thanks />}></Route>
         <Route path="/email-marketing" element={<EmailMarketing />}></Route>
         <Route path="/guest-blogging" element={<GuestBlogging />}></Route>
         <Route
