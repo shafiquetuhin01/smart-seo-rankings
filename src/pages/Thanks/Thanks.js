@@ -10,7 +10,7 @@ const Thanks = () => {
         <div className="w-8/12 ">
           
         </div>
-        <div className="w-4/12 mt-[10%]">
+        <div className="w-4/12 mt-[8%]">
             <h3 className="text-info font-bold text-3xl uppercase">Welcome !</h3>
             <p className="my-4">Thanks for connecting with us and requesting a quote!</p>
             <p className="my-4">We’re going to get right on that. A Search Berg representative will be sending you a proposal and an audit report within 24 hours.</p>

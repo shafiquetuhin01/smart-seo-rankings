@@ -4,22 +4,24 @@ import {
   FaEnvelope,
   FaGlobe,
   FaPaperPlane,
-  FaPencilAlt,
   FaPhoneAlt,
-  FaRegCommentAlt,
   FaUser,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const ArticleWritingForm = () => {
   const {
     register,
-    handleSubmit,
-    formState: { errors },
+        formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
-  return (
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    e.target.reset();
+    navigate('/thanks');
+  };
+  const navigate = useNavigate();
+   return (
     <div className="bg-[#F3F7FA] relative rounded-xl w-9/12 mx-auto p-3">
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit}>
         <h3 className="text-[22px] leading-[2rem] py-3 text-accent font-bold text-center">
           GET A FREE 30-MINUTE
           <span className="text-secondary"> STRATEGY CONSULTATION</span>
@@ -30,7 +32,7 @@ const ArticleWritingForm = () => {
             <FaUser className="absolute left-2 top-3 text-secondary" />
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
-              placeholder="Full Name"
+              placeholder="Full Name" required
               {...register("fullName", { required: true })}
             />
             {errors.fullName && (
@@ -43,7 +45,7 @@ const ArticleWritingForm = () => {
             <FaEnvelope className="absolute left-2 top-3 text-secondary" />
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
-              placeholder="Email"
+              placeholder="Email" required
               {...register("email", { required: true })}
             />
             {errors.email && (
@@ -54,7 +56,7 @@ const ArticleWritingForm = () => {
             <FaPhoneAlt className="absolute left-2 top-3 text-secondary" />
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
-              placeholder="Phone"
+              placeholder="Phone" required
               {...register("phone", { required: true })}
             />
             {errors.phone && (
@@ -66,7 +68,7 @@ const ArticleWritingForm = () => {
           <div className="mb-1 relative ">
             <FaGlobe className="absolute left-2 top-3 text-secondary" />
             <textarea
-              className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1" rows="4"              placeholder="Project Details"
+              className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1" rows="4"    placeholder="Project Details" required
               {...register("project", { required: true })}
             />
             {errors.project && (

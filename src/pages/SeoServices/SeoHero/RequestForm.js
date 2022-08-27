@@ -5,6 +5,7 @@ const RequestForm = () => {
   const requestSubmit = (e) =>{
     e.preventDefault();
     e.target.reset();
+    navigate('/thanks');
   }
   const navigate = useNavigate();
   return (

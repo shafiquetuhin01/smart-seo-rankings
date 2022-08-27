@@ -9,17 +9,18 @@ import {
   FaRegCommentAlt,
   FaUser,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 const MyForm = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
+  
+  const requestSubmit = (e) =>{
+    e.preventDefault();
+    e.target.reset();
+    navigate('/thanks');
+  }
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-white rounded-xl w-10/12 mx-auto p-3">
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={requestSubmit}>
         <h3 className="text-[41px] leading-[3rem] py-3 text-accent font-bold text-center">
           GET FREE{" "}
           <span className="text-secondary">DIGITAL MARKETING REPORT</span>
@@ -30,50 +31,36 @@ const MyForm = () => {
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
               placeholder="Full Name"
-              {...register("fullName", { required: true })}
+             required
             />
-            {errors.fullName && (
-              <p className="text-[red] text-sm">
-                * Your full name is required.
-              </p>
-            )}
+            
           </div>
           <div className="mb-3 relative ">
             <FaEnvelope className="absolute left-2 top-3 text-secondary" />
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
               placeholder="Email"
-              {...register("email", { required: true })}
+              required
             />
-            {errors.email && (
-              <p className="text-[red] text-sm">* Your email is required.</p>
-            )}
+            
           </div>
           <div className="mb-3 relative ">
             <FaPhoneAlt className="absolute left-2 top-3 text-secondary" />
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
               placeholder="Phone"
-              {...register("phone", { required: true })}
+              required
             />
-            {errors.phone && (
-              <p className="text-[red] text-sm">
-                * Your phone number is required.
-              </p>
-            )}
+            
           </div>
           <div className="mb-3 relative ">
             <FaGlobe className="absolute left-2 top-3 text-secondary" />
             <input
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
               placeholder="Website"
-              {...register("website", { required: true })}
+              required
             />
-            {errors.website && (
-              <p className="text-[red] text-sm">
-                * Your website address is required.
-              </p>
-            )}
+            
           </div>
           <div className="mb-3 relative ">
             <FaPencilAlt className="absolute left-2 top-3 text-secondary" />
@@ -83,7 +70,7 @@ const MyForm = () => {
               type="text"
               className="outline-[1px] outline-[#F37F34] form-group w-full pl-7 py-2 border-[1px] bg-[#F6F4F4] rounded-sm mb-1"
               placeholder="Guest Blogging"
-              {...register("guest", { required: true })}
+              required
             >
               <option value disabled="disabled">Inquiring About</option>
               <option className="text-[#a1a0a0]" value="SEO">SEO</option>
@@ -113,15 +100,11 @@ const MyForm = () => {
               </option>
               <option className="text-[#a1a0a0]" value="Other">Other</option>
             </select>
-            {errors.guest && (
-              <p className="text-[red] text-sm">
-                * Your have to choose anyone from this field.
-              </p>
-            )}
+            
           </div>
 
           <div className="py-6 text-center mb-5 ">
-            <button className="btn btn-secondary hover:bg-[#0E1C37] hover:border-0 text-white text-xl font-bold btn-lg">
+            <button className="btn h-8 btn-secondary btn-wide hover:bg-[#0E1C37] hover:border-0 text-white text-xl font-bold btn-lg">
               GET STARTED{" "}
               <span className="ml-2">
                 <FaPaperPlane />
