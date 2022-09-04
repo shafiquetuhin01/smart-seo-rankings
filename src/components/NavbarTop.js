@@ -13,11 +13,10 @@ const NavbarTop = () => {
     navigate("/login");
   };
   const [user] = useAuthState(auth);
-  console.log(user)
-
+  
   const handleSignOut = () => {
     signOut(auth);
-    navigate("/login");
+    localStorage.removeItem('accessToken');
   };
   
   return (
